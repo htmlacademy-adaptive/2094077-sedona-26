@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo">
+          <img class="navigation-logo" src="#" width="185" height="96" alt="Логотип Седоны.">
+        </a>
+        <nav></nav>
+        <button class="main-header__toggle main-header__toggle--closed" type="button">
+          <span class="visually-hidden">Меню.</span>
+        </button>
+        <nav class="main-header__main-navigation main-header__main-navigation--closed main-header__main-navigation--toggle">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--current" href="#">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">ФОТО И ВИДЕО</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-form">
+      <section class="main-form__introduction introduction">
+        <h2 class="visually-hidden">Введение.</h2>
+        <p class="introduction__title">Оставьте свой отзыв</p>
+        <p class="introduction__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <section>
+        <form class="" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="">
+            <legend class="">
+              Представьтесь:
+            </legend>
+            <ul class="">
+              <li class="">
+                <label class="" for="">
+                  <p class="">ИМЯ*:</p>
+                  <input class="" type="text" required>
+                </label>
+              </li>
+              <li class="">
+                <label class="" for="">
+                  <p class="">ФАМИЛИЯ*:</p>
+                  <input class="" type="text" required>
+                </label>
+              </li>
+              <li class="">
+                <label class="" for="">
+                  <p class="">Отчество:</p>
+                  <input class="" type="text">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="">
+            <legend class="">
+              Контактная информация:
+            </legend>
+            <ul class="">
+              <li class="">
+                <label class="" for="">
+                  <p class="">Контактный телефон*:</p>
+                  <input class="" type="tel" required>
+              </label>
+              </li>
+              <li class="">
+                <label class="" for="">
+                  <p class="">Электронная почта*:</p>
+                  <input class="" type="email" required>
+              </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="">
+            <legend class="">
+              ВАше Общее впечатление:
+            </legend>
+            <ul class="">
+              <li class="">
+                <label class="" for="">
+                  <input class="" type="radio" name="" value="" id="" checked>
+                  <p class="">Скорее положительное</p>
+                </label>
+              </li>
+              <li class="">
+                <label class="" for="">
+                  <input class="" type="radio" name="" value="" id="">
+                  <p class="">Скорее отрицательное</p>
+                </label>
+              </li>
+              <li class="">
+                <label class="" for="">
+                  <input class="" type="radio" name="" value="" id="">
+                  <p class="">Затрудняюсь ответить</p>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="">
+            <legend class="">
+              Посещенные достопримечательности:
+            </legend>
+            <ul class="">
+              <li class="">
+                <label class="" for="">
+                  <input class="" type="checkbox" name="" id="" checked>
+                  <p class="">Мост Дьявола</p>
+                </label>
+              </li>
+              <li class="">
+                <label class="" for="">
+                  <input class="" type="checkbox" name="" id="" checked>
+                  <p class="">Гора-Колокол</p>
+                </label>
+              </li>
+              <li class="">
+                <label class="" for="">
+                  <input class="" type="checkbox" name="" id="" checked>
+                  <p class="">Слайд-парк</p>
+                </label>
+              </li>
+              <li class="">
+                <label class="" for="">
+                  <input class="" type="checkbox" name="" id="">
+                  <p class="">Красные скалы</p>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="">
+            <legend class="">
+              Посещенные достопримечательности:
+            </legend>
+            <textarea class="" placeholder="Опишите подробно все свои восторги">
+            </textarea>
+            <button class="" type="submit">Отправить отзыв</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    <div class="modal modal__close">
+      <h2 class="visually-hidden">Окно ошибка отправки формы.</h2>
+      <p class="">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+      <p class="">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="" type="button">ок</button>
+    </div>
+    <div class="modal modal__close">
+      <h2 class="visually-hidden">Окно подтверждения отправки.</h2>
+      <p class="">Ваш отзыв отправлен!</p>
+      <p class="">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="" type="button">ок</button>
+    </div>
+  </body>
+</html>
