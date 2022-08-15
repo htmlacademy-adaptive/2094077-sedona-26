@@ -39,125 +39,125 @@
 <!-- Основная часть/отзыв -->
     <main class="main-form">
       <h1 class="visually-hidden">Отзыв о Седоне.</h1>
-      <div class="">
-        <img class="" src="./img/sedona.svg" width="229" height="39" alt="Sedona.">
+      <div class="main-form__sedona-logo-wrapper">
+        <img class="main-form__sedona-logo sedona-logo" src="./img/sedona.svg" width="229" height="39" alt="Sedona.">
       </div>
       <section class="main-form__introduction introduction">
         <h2 class="visually-hidden">Введение.</h2>
         <p class="introduction__title">Оставьте свой отзыв</p>
         <p class="introduction__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
-      <section>
+      <section class="main-form__form">
         <h2 class="visually-hidden">Форма отзыва.</h2>
-        <form class="" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="">
-            <legend class="">
+        <form class="main-form__form form-rewiew" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form-rewiew__introduce">
+            <legend class="form-rewiew__title">
               Представьтесь:
             </legend>
-            <ul class="">
-              <li class="">
-                <label class="" for="name">
-                  <p class="">ИМЯ*:</p>
-                  <input class="" type="text" name="name" id="name" placeholder="Пётр" required>
+            <ul class="form-rewiew__list">
+              <li class="form-rewiew__item">
+                <label class="form-rewiew__item-label" for="name">
+                  <span class="form-rewiew__item-description">ИМЯ*:</span>
+                  <input class="form-rewiew__input" type="text" name="name" id="name" placeholder="Пётр" required>
                 </label>
               </li>
-              <li class="">
-                <label class="" for="surname">
-                  <p class="">ФАМИЛИЯ*:</p>
-                  <input class="" type="text" name="surname" id="surname" placeholder="Пустота" required>
+              <li class="form-rewiew__item">
+                <label class="form-rewiew__item-label" for="surname">
+                  <span class="form-rewiew__item-description">ФАМИЛИЯ*:</span>
+                  <input class="form-rewiew__input" type="text" name="surname" id="surname" placeholder="Пустота" required>
                 </label>
               </li>
-              <li class="">
-                <label class="" for="patronymic">
-                  <p class="">Отчество:</p>
-                  <input class="" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
+              <li class="form-rewiew__item">
+                <label class="form-rewiew__item-label" for="patronymic">
+                  <span class="form-rewiew__item-description">Отчество:</span>
+                  <input class="form-rewiew__input" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="">
-            <legend class="">
+          <fieldset class="form-rewiew__contacts">
+            <legend class="form-rewiew__title">
               Контактная информация:
             </legend>
-            <ul class="">
-              <li class="">
-                <label class="" for="phone-number">
-                  <p class="">Контактный телефон*:</p>
-                  <input class="" type="tel" name="phone-number" id="phone-number" placeholder="Введите телефон" required>
+            <ul class="form-rewiew__list">
+              <li class="form-rewiew__item">
+                <label class="form-rewiew__item-label" for="phone-number">
+                  <span class="form-rewiew__item-description">Контактный телефон*:</span>
+                  <input class="form-rewiew__input" type="tel" name="phone-number" id="phone-number" placeholder="Введите телефон" required>
                 </label>
               </li>
-              <li class="">
-                <label class="" for="e-mail">
-                  <p class="">Электронная почта*:</p>
-                  <input class="" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+              <li class="form-rewiew__item">
+                <label class="form-rewiew__item-label" for="e-mail">
+                  <span class="form-rewiew__item-description">Электронная почта*:</span>
+                  <input class="form-rewiew__input" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="">
-            <legend class="">
+          <fieldset class="form-rewiew__impression">
+            <legend class="form-rewiew__title">
               ВАше Общее впечатление:
             </legend>
-            <ul class="">
-              <li class="">
-                <label class="" for="good-impression">
-                  <input class="" type="radio" name="impression" value="good" id="good-impression" checked>
-                  <p class="">Скорее положительное</p>
+            <ul class="form-rewiew__list">
+              <li class="form-rewiew__item form-rewiew__item--alternative-markup">
+                <label class="form-rewiew__item-label" for="good-impression">
+                  <input class="form-rewiew__input form-rewiew__input--radio" type="radio" name="impression" value="good" id="good-impression" checked>
+                  <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Скорее положительное</span>
                 </label>
               </li>
-              <li class="">
-                <label class="" for="bad-impression">
-                  <input class="" type="radio" name="impression" value="bad" id="bad-impression">
-                  <p class="">Скорее отрицательное</p>
+              <li class="form-rewiew__item form-rewiew__item--alternative-markup">
+                <label class="form-rewiew__item-label" for="bad-impression">
+                  <input class="form-rewiew__input form-rewiew__input--radio" type="radio" name="impression" value="bad" id="bad-impression">
+                  <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="">
-                <label class="" for="difficult-impression">
-                  <input class="" type="radio" name="impression" value="difficult" id="difficult-impression">
-                  <p class="">Затрудняюсь ответить</p>
+              <li class="form-rewiew__item form-rewiew__item--alternative-markup">
+                <label class="form-rewiew__item-label" for="difficult-impression">
+                  <input class="form-rewiew__input form-rewiew__input--radio" type="radio" name="impression" value="difficult" id="difficult-impression">
+                  <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="">
-            <legend class="">
+          <fieldset class="form-rewiew__attractions">
+            <legend class="form-rewiew__title">
               Посещенные достопримечательности:
             </legend>
-            <ul class="">
-              <li class="">
-                <label class="" for="checkbox-bridge">
-                  <input class="" type="checkbox" name="bridge" id="checkbox-bridge" checked>
-                  <p class="">Мост Дьявола</p>
+            <ul class="form-rewiew__list">
+              <li class="form-rewiew__item form-rewiew__item--alternative-markup">
+                <label class="form-rewiew__item-label" for="checkbox-bridge">
+                  <input class="form-rewiew__input form-rewiew__input--checkbox" type="checkbox" name="bridge" id="checkbox-bridge" checked>
+                  <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="">
-                <label class="" for="checkbox-mountain">
-                  <input class="" type="checkbox" name="mountain" id="checkbox-mountain" checked>
-                  <p class="">Гора-Колокол</p>
+              <li class="form-rewiew__item form-rewiew__item--alternative-markup">
+                <label class="form-rewiew__item-label" for="checkbox-mountain">
+                  <input class="form-rewiew__input form-rewiew__input--checkbox" type="checkbox" name="mountain" id="checkbox-mountain" checked>
+                  <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="">
-                <label class="" for="checkbox-park">
-                  <input class="" type="checkbox" name="park" id="checkbox-park" checked>
-                  <p class="">Слайд-парк</p>
+              <li class="form-rewiew__item form-rewiew__item--alternative-markup">
+                <label class="form-rewiew__item-label" for="checkbox-park">
+                  <input class="form-rewiew__input form-rewiew__input--checkbox" type="checkbox" name="park" id="checkbox-park" checked>
+                  <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Слайд-парк</span>
                 </label>
               </li>
-              <li class="">
-                <label class="" for="checkbox-rock">
-                  <input class="" type="checkbox" name="rock" id="checkbox-rock">
-                  <p class="">Красные скалы</p>
+              <li class="form-rewiew__item form-rewiew__item--alternative-markup">
+                <label class="form-rewiew__item-label" for="checkbox-rock">
+                  <input class="form-rewiew__input form-rewiew__input--checkbox" type="checkbox" name="rock" id="checkbox-rock">
+                  <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Красные скалы</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="">
-            <legend class="" for="rewiew">
+          <fieldset class="form-rewiew__emotions">
+            <legend class="form-rewiew__title">
               Опишите свои эмоции:
             </legend>
-            <textarea class="" name="rewiew" id="rewiew" placeholder="Опишите подробно все свои восторги">
+            <textarea class="form-rewiew__input-rewiew" name="rewiew" id="rewiew" placeholder="Опишите подробно все свои восторги">
             </textarea>
-            <button class="" type="submit">Отправить отзыв</button>
-            <p class="">* — обязательные поля</p>
+            <button class="form-rewiew__button button" type="submit">Отправить отзыв</button>
+            <p class="form-rewiew__warning">* — обязательные поля</p>
           </fieldset>
         </form>
       </section>
@@ -214,16 +214,16 @@
 <!-- Модальное окно/ошибка -->
     <div class="modal modal--close">
       <h2 class="visually-hidden">Окно ошибка отправки формы.</h2>
-      <p class="">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-      <p class="">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="" type="button">ок</button>
+      <p class="modal__warning">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button" type="button">ок</button>
     </div>
 <!-- Модальное окно/подтверждение отправки -->
     <div class="modal modal--close">
       <h2 class="visually-hidden">Окно подтверждения отправки.</h2>
-      <p class="">Ваш отзыв отправлен!</p>
-      <p class="">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="" type="button">закрыть окно</button>
+      <p class="modal__warning">Ваш отзыв отправлен!</p>
+      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal__button" type="button">закрыть окно</button>
     </div>
   </body>
 </html>
