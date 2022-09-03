@@ -1,3 +1,23 @@
-body {
-  background: blue;
-}
+@use "page.scss";
+@use "main-header";
+@use "navigation-logo";
+@use "main-navigation";
+@use "main-index";
+@use "main-logo-wrapper";
+@use "introduction";
+@use "advantages";
+@use "advantage";
+@use "town";
+@use "search-hotel";
+@use "map";
+@use "main-footer";
+@use "hashtag";
+@use "social";
+@use "website-developer";
+@use "main-form";
+@use "form-rewiew";
+@use "button";
+@use "main-catalog";
+@use "photo";
+@use "photo-article";
+@use "video";
