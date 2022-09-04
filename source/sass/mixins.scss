@@ -8,3 +8,20 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin start {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font400 {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font700 {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
