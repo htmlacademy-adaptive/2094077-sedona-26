@@ -1,0 +1,65 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+@use "visually-hidden.scss";
+
+.main-navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-navigation__button-close {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  @include mixins.start();
+  border: 0;
+  background-color: variables.$add-color;
+  cursor: pointer;
+    // &--closed {
+    // display: none;  //при нажатии на меню убирает класс
+    // }
+}
+
+.main-navigation__close-menu {
+  fill: rgba(255, 255, 255, 1);
+  &:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+  &:disabled {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.main-navigation__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  @include mixins.start();
+}
+
+.main-navigation__item {
+  background-color: variables.$add-color;
+}
+
+.main-navigation__link {
+  @include mixins.font700();
+  display: block;
+  text-decoration: none;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  color: variables.$base-color;
+  background-color: variables.$add-color;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  &--current {
+
+  }
+}
