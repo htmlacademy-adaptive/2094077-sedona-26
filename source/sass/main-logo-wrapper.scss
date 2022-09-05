@@ -1,0 +1,24 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+// @use "visually-hidden.scss";
+
+.main-logo-wrapper {
+  background-image: url('../img/welcomesedona-back.jpg');
+  background-size: cover;
+  background-color: #426a96;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 90px;
+  padding-bottom: 85px;
+    &::after {
+    background-image: url('..img/mask2.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom; //хммм чет не видно
+  }
+}
+
+.main-logo-wrapper__sedona-logo {
+  display: block;
+  margin: 0 auto;
+}

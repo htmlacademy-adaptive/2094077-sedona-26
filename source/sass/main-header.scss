@@ -1,3 +1,64 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+@use "visually-hidden.scss";
+
 .main-header {
+
+}
+
+.main-header__wrapper {
+  position: relative;
+  height: 56px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-header__logo-link {
+  display: block;
+  width: 185px;
+  margin-left: 67px;
+}
+
+.main-header__logo-img {
+  display: block;
+  width: 185px;
+}
+
+.main-header__toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  background-color: variables.$base-color;
+  border: 0;
+  cursor: pointer;
+  // &--closed {
+  //   display: none;  //при нажатии на меню добавляет класс
+  // }
+}
+
+.main-header__menu {
+  fill: rgba(129, 179, 210, 1);
+  &:hover {
+    fill: rgba(129, 179, 210, 0.6);
+  }
+  &:focus {
+    fill: rgba(129, 179, 210, 0.6);
+  }
+  &:disabled {
+    fill: rgba(129, 179, 210, 0.3);
+  }
+}
+
+.main-header__main-navigation {
+
+  &--closed {
+    display: none;  //при нажатии на меню убирает класс
+  }
+}
+
+
+
+.main-header__main-navigation--toggle {
 
 }
