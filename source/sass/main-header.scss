@@ -51,8 +51,8 @@
 }
 
 .main-header__main-navigation {
-  // &--closed {
-  //   display: none;  //при нажатии на меню убирает класс
-  // }
+  &--closed {
+    display: none;  //при нажатии на меню убирает класс
+  }
 }
 
