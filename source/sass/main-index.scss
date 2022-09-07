@@ -1,14 +1,20 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
 .main-index {
   display: flex;
   flex-direction: column;
 }
 
 .main-index__main-logo-wrapper {
-
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
 
 .main-index__introduction {
-
+  min-height: 205px;
 }
 
 .main-index__advantages {
@@ -16,7 +22,7 @@
 }
 
 .main-index__search-hotel {
-
+  padding: 38px 18px 49px;
 }
 
 .main-index__map {

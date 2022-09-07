@@ -1,0 +1,19 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.advantages {
+  width: 320px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  @include mixins.start();
+  list-style: none;
+}
+
+.advantages__item {
+
+}

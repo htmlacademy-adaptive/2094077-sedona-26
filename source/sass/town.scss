@@ -1,0 +1,51 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.town {
+ 
+}
+
+.town__wrapper {
+  position: relative;
+  width: 284px;
+  margin: 25px 18px 52px;
+}
+
+.town__title {
+  @include mixins.start();
+  @include mixins.font700();
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: variables.$base-textcolor;
+  padding-left: 52px;
+}
+
+.town__svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-house-advantages.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  &--food {
+    background-image: url("../img/icon-burger-advantages.svg");
+    width: 40px;
+    height: 35px;
+  }
+  &--gift {
+    background-image: url("../img/icon-gift-advantages.svg");
+    width: 32px;
+    height: 38px;
+  }
+}
+
+.town__description {
+  @include mixins.start();
+  text-transform: uppercase;
+  padding-left: 52px;
+}

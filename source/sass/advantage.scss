@@ -1,0 +1,68 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage--color-basic {
+  color: variables.$base-color;
+  background-color: variables.$add-color;
+}
+
+.advantage--color-additional {
+  color: variables.$add-textcolor;
+  background-color: variables.$alt-color;
+}
+
+.advantage__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 284px;
+  min-height: 117px;
+  margin: 54px auto 40px;
+  text-align: center;
+}
+
+.advantage__title {
+  @include mixins.start();
+  @include mixins.font700();
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.advantage__title--alternative {
+  color: variables.$base-textcolor;
+}
+
+.advantage__number {
+  @include mixins.start();
+  text-transform: uppercase;
+}
+
+.advantage__description {
+  @include mixins.start();
+  text-transform: uppercase;
+}
+
+.advantage__image {
+  display: block;
+  background-size: cover;
+  width: 320px;
+}
+
+.advantage__sublist {
+  @include mixins.start();
+  list-style: none;
+  background-color: variables.$base-color;
+}
+
+.advantage__subitem {
+  color: variables.$add-textcolor;
+  background-color: variables.$base-color;
+}

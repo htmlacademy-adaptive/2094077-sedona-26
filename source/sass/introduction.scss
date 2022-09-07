@@ -1,0 +1,29 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.introduction {
+
+}
+
+.introduction__title {
+  @include mixins.font700();
+  @include mixins.start();
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  min-height: 80px;
+  margin-top: 32px;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.introduction__description {
+  @include mixins.start();
+  margin-bottom: 16px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

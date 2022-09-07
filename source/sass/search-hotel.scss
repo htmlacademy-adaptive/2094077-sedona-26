@@ -1,0 +1,38 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.search-hotel {
+  text-align: center;
+}
+
+.search-hotel__question {
+  @include mixins.start();
+  @include mixins.font700();
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.search-hotel__description {
+  @include mixins.start();
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.search-hotel__link {
+  display: block;
+  width: 284px;
+  height: 58px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: auto;
+  padding-top: 16px;
+  font-size: 21px;
+  line-height: 26px;
+  color: variables.$base-color;
+  background-color: variables.$add-color;
+}
