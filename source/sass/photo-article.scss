@@ -4,23 +4,39 @@
 @use "visually-hidden.scss";
 
 .photo-article {
-
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .photo-article__title {
-
+  @include mixins.start();
+  @include mixins.font700();
+  font-size: 14px;
+  margin-top: 15px;
+  text-transform: uppercase;
 }
 
 .photo-article__image {
-
+  order: -1;
 }
 
 .photo-article__author {
-
+  @include mixins.start();
+}
+.photo-article__author-name {
+  font-style: normal;
 }
 
 .photo-article__button {
-
+  @include mixins.start();
+  display: inline-block;
+  position: absolute;
+  top: 349px;
+  left: 0;
+  width: 23px;
+  background-color: variables.$base-color;
+  border: 0;
 }
 
 .photo-article__svg {
@@ -28,5 +44,9 @@
 }
 
 .photo-article__like-number {
-
+  @include mixins.start();
+  @include mixins.font700();
+  display: inline-block;
+  margin-left: 37px;
+  margin-top: 16px;
 }
