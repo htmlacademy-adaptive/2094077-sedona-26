@@ -10,11 +10,11 @@
 }
 
 .social__list {
+  @include mixins.start();
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  @include mixins.start();
   min-height: 48px;
 }
 
@@ -29,15 +29,18 @@
   background-color: variables.$add-color;
   width: 48px;
   height: 48px;
-  &:hover{
-    background-color: rgba(102, 158, 192, 1);
-  }
-  &:focus{
-    background-color: rgba(102, 158, 192, 1);
-  }
-  &:disabled {
-    background-color: rgba(84, 150, 189, 1);
-  }
+}
+
+.social__link:hover {
+  background-color: rgba(102, 158, 192, 1);
+}
+
+.social__link:focus {
+  background-color: rgba(102, 158, 192, 1);
+}
+
+.social__link:disabled {
+  background-color: rgba(84, 150, 189, 1);
 }
 
 .social__svg {

@@ -9,12 +9,14 @@
   background-color: #426a96;
   background-repeat: no-repeat;
   background-position: center;
-    &::after {
-    background-image: url("..img/mask2.svg");
-    background-repeat: no-repeat;
-    background-position: center bottom; //хммм чет не видно
-  }
 }
+
+.main-logo-wrapper::after {
+  background-image: url("..img/mask2.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom; //хммм чет не видно
+}
+
 
 .main-logo-wrapper--alternative {
   background-position: bottom;

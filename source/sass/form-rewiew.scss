@@ -30,14 +30,6 @@
   list-style: none;
 }
 
-.form-rewiew__item {
-
-}
-
-.form-rewiew__item-label {
-
-}
-
 .form-rewiew__item-description {
   display: block;
   padding-left: 16px;
@@ -75,9 +67,10 @@
   background-color: rgba(230, 230, 230, 1);
   background-repeat: no-repeat;
   background-position: center;
-  &--alt {
-    background-image: url("../img/icon-mail.svg")
-  }
+}
+
+.form-rewiew__svg-container--alt {
+  background-image: url("../img/icon-mail.svg");
 }
 
 .form-rewiew__impression {
@@ -144,7 +137,6 @@
   width: 281px;
   height: 58px;
   padding: 18px 0 14px;
-
 }
 
 .form-rewiew__warning {

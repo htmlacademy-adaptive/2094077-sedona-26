@@ -3,10 +3,6 @@
 @use "mixins.scss";
 //@use "visually-hidden.scss";
 
-.town {
- 
-}
-
 .town__wrapper {
   position: relative;
   width: 284px;
@@ -32,16 +28,18 @@
   background-image: url("../img/icon-house-advantages.svg");
   background-repeat: no-repeat;
   background-position: center;
-  &--food {
-    background-image: url("../img/icon-burger-advantages.svg");
-    width: 40px;
-    height: 35px;
-  }
-  &--gift {
-    background-image: url("../img/icon-gift-advantages.svg");
-    width: 32px;
-    height: 38px;
-  }
+}
+
+.town__svg-container--food {
+  background-image: url("../img/icon-burger-advantages.svg");
+  width: 40px;
+  height: 35px;
+}
+
+.town__svg-container--gift {
+  background-image: url("../img/icon-gift-advantages.svg");
+  width: 32px;
+  height: 38px;
 }
 
 .town__description {

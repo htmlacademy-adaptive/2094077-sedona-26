@@ -15,11 +15,8 @@
 .photo__item {
   padding: 24px 20px 30px;
   border-bottom: 1px rgba(229, 229, 229, 1) solid;
-  &:first-child {
-    border-top: 1px rgba(229, 229, 229, 1) solid;
-  }
 }
 
-.photo-article {
-
+.photo__item:first-child {
+  border-top: 1px rgba(229, 229, 229, 1) solid;
 }

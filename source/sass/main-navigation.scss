@@ -14,36 +14,40 @@
 }
 
 .main-navigation__button-close {
+  @include mixins.start();
   position: absolute;
   top: 17px;
   right: 16px;
-  @include mixins.start();
   border: 0;
   background-color: variables.$add-color;
   cursor: pointer;
-    // &--closed {
-    // display: none;  //при нажатии на меню убирает класс
-    // }
+}
+
+.main-navigation__button-close--closed {
+  display: none;  //при нажатии на меню убирает класс
 }
 
 .main-navigation__close-menu {
   fill: rgba(255, 255, 255, 1);
-  &:hover {
-    fill: rgba(255, 255, 255, 0.6);
-  }
-  &:focus {
-    fill: rgba(255, 255, 255, 0.6);
-  }
-  &:disabled {
-    fill: rgba(255, 255, 255, 0.3);
-  }
+}
+
+.main-navigation__close-menu:hover {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.main-navigation__close-menu:focus {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.main-navigation__close-menu:disabled {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .main-navigation__list {
+  @include mixins.start();
   display: flex;
   flex-direction: column;
   list-style: none;
-  @include mixins.start();
 }
 
 .main-navigation__item {
@@ -58,8 +62,5 @@
   padding-bottom: 12px;
   color: variables.$base-color;
   background-color: variables.$add-color;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
-  &--current {
-
-  }
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }

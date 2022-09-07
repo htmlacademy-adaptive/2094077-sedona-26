@@ -3,10 +3,6 @@
 @use "mixins.scss";
 @use "visually-hidden.scss";
 
-.main-header {
-
-}
-
 .main-header__wrapper {
   position: relative;
   height: 56px;
@@ -39,20 +35,22 @@
 
 .main-header__menu {
   fill: rgba(129, 179, 210, 1);
-  &:hover {
-    fill: rgba(129, 179, 210, 0.6);
-  }
-  &:focus {
-    fill: rgba(129, 179, 210, 0.6);
-  }
-  &:disabled {
-    fill: rgba(129, 179, 210, 0.3);
-  }
+}
+
+.main-header__menu:hover {
+  fill: rgba(129, 179, 210, 0.6);
+}
+
+.main-header__menu:focus {
+  fill: rgba(129, 179, 210, 0.6);
+}
+
+.main-header__menu:disabled {
+  fill: rgba(129, 179, 210, 0.3);
 }
 
 .main-header__main-navigation {
-  // &--closed {
-  //   display: none;  //при нажатии на меню убирает класс
-  // }
+  &--closed {
+    display: none;  //при нажатии на меню убирает класс
+  }
 }
-

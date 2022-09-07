@@ -8,12 +8,8 @@
 }
 
 .advantages__list {
+  @include mixins.start();
   display: flex;
   flex-direction: column;
-  @include mixins.start();
   list-style: none;
-}
-
-.advantages__item {
-
 }

@@ -3,10 +3,6 @@
 @use "mixins.scss";
 //@use "visually-hidden.scss";
 
-.introduction {
-
-}
-
 .introduction__title {
   @include mixins.font700();
   @include mixins.start();
