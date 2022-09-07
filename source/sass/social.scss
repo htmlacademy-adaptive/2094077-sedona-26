@@ -1,0 +1,55 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.social {
+  @include mixins.start();
+  width: 156px;
+  margin: 0 auto;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  @include mixins.start();
+  min-height: 48px;
+}
+
+.social__item {
+  @include mixins.start();
+  position: relative;
+  list-style-type: none;
+}
+
+.social__link {
+  display: block;
+  background-color: variables.$add-color;
+  width: 48px;
+  height: 48px;
+  &:hover{
+    background-color: rgba(102, 158, 192, 1);
+  }
+  &:focus{
+    background-color: rgba(102, 158, 192, 1);
+  }
+  &:disabled {
+    background-color: rgba(84, 150, 189, 1);
+  }
+}
+
+.social__svg {
+  fill: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.social__link:disabled .social__svg {
+  fill: rgba(255, 255, 255, 0.3);
+}
