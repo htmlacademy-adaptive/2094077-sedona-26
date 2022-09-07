@@ -1,0 +1,14 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+@use "visually-hidden.scss";
+
+.main__catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-catalog__main-logo-wrapper {
+  padding-top: 52px;
+  padding-bottom: 67px;
+}
