@@ -84,13 +84,15 @@
                 <li class="form-rewiew__item">
                   <label class="form-rewiew__item-label" for="phone-number">
                     <span class="form-rewiew__item-description">Контактный телефон*:</span>
-                    <input class="form-rewiew__input" type="tel" name="phone-number" id="phone-number" placeholder="Введите телефон" required>
+                    <input class="form-rewiew__input form-rewiew__input--alt" type="tel" name="phone-number" id="phone-number" placeholder="Введите телефон" required>
+                    <span class="form-rewiew__svg-container"></span>
                   </label>
                 </li>
                 <li class="form-rewiew__item">
                   <label class="form-rewiew__item-label" for="e-mail">
                     <span class="form-rewiew__item-description">Электронная почта*:</span>
-                    <input class="form-rewiew__input" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+                    <input class="form-rewiew__input form-rewiew__input--alt" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+                    <span class="form-rewiew__svg-container form-rewiew__svg-container--alt"></span>
                   </label>
                 </li>
               </ul>
@@ -101,19 +103,19 @@
               </legend>
               <ul class="form-rewiew__list">
                 <li class="form-rewiew__item form-rewiew__item--alternative-markup">
-                  <label class="form-rewiew__item-label" for="good-impression">
+                  <label class="form-rewiew__item-label form-rewiew__item-label--alt" for="good-impression">
                     <input class="form-rewiew__input form-rewiew__input--radio" type="radio" name="impression" value="good" id="good-impression" checked>
                     <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="form-rewiew__item form-rewiew__item--alternative-markup">
-                  <label class="form-rewiew__item-label" for="bad-impression">
+                  <label class="form-rewiew__item-label form-rewiew__item-label--alt" for="bad-impression">
                     <input class="form-rewiew__input form-rewiew__input--radio" type="radio" name="impression" value="bad" id="bad-impression">
                     <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="form-rewiew__item form-rewiew__item--alternative-markup">
-                  <label class="form-rewiew__item-label" for="difficult-impression">
+                  <label class="form-rewiew__item-label form-rewiew__item-label--alt" for="difficult-impression">
                     <input class="form-rewiew__input form-rewiew__input--radio" type="radio" name="impression" value="difficult" id="difficult-impression">
                     <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Затрудняюсь ответить</span>
                   </label>
@@ -126,25 +128,25 @@
               </legend>
               <ul class="form-rewiew__list">
                 <li class="form-rewiew__item form-rewiew__item--alternative-markup">
-                  <label class="form-rewiew__item-label" for="checkbox-bridge">
+                  <label class="form-rewiew__item-label form-rewiew__item-label--alt" for="checkbox-bridge">
                     <input class="form-rewiew__input form-rewiew__input--checkbox" type="checkbox" name="bridge" id="checkbox-bridge" checked>
                     <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="form-rewiew__item form-rewiew__item--alternative-markup">
-                  <label class="form-rewiew__item-label" for="checkbox-mountain">
+                  <label class="form-rewiew__item-label form-rewiew__item-label--alt" for="checkbox-mountain">
                     <input class="form-rewiew__input form-rewiew__input--checkbox" type="checkbox" name="mountain" id="checkbox-mountain" checked>
                     <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="form-rewiew__item form-rewiew__item--alternative-markup">
-                  <label class="form-rewiew__item-label" for="checkbox-park">
+                  <label class="form-rewiew__item-label form-rewiew__item-label--alt" for="checkbox-park">
                     <input class="form-rewiew__input form-rewiew__input--checkbox" type="checkbox" name="park" id="checkbox-park" checked>
                     <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="form-rewiew__item form-rewiew__item--alternative-markup">
-                  <label class="form-rewiew__item-label" for="checkbox-rock">
+                  <label class="form-rewiew__item-label form-rewiew__item-label--alt" for="checkbox-rock">
                     <input class="form-rewiew__input form-rewiew__input--checkbox" type="checkbox" name="rock" id="checkbox-rock">
                     <span class="form-rewiew__item-description form-rewiew__item-description--alternative">Красные скалы</span>
                   </label>
@@ -212,18 +214,22 @@
         </div>
       </footer>
 <!--   Модальное окно/ошибка -->
-      <div class="modal modal--close">
-        <h2 class="visually-hidden">Окно ошибка отправки формы.</h2>
-        <p class="modal__warning">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button" type="button">ок</button>
+      <div class="modal modal--close-warning">
+        <div class="modal__wrapper">
+          <h2 class="visually-hidden">Окно ошибка отправки формы.</h2>
+          <p class="modal__warning">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+          <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal__button button" type="button">ок</button>
+        </div>
       </div>
 <!--   Модальное окно/подтверждение отправки -->
-      <div class="modal modal--close">
-        <h2 class="visually-hidden">Окно подтверждения отправки.</h2>
-        <p class="modal__warning">Ваш отзыв отправлен!</p>
-        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal__button" type="button">закрыть окно</button>
+      <div class="modal modal--close-accept">
+        <div class="modal__wrapper">
+          <h2 class="visually-hidden">Окно подтверждения отправки.</h2>
+          <p class="modal__warning">Ваш отзыв отправлен!</p>
+          <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <button class="modal__button modal__button--alt button" type="button">закрыть окно</button>
+        </div>
       </div>
     </div>
   </body>

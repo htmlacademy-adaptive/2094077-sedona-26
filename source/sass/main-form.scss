@@ -3,3 +3,22 @@
 @use "mixins.scss";
 //@use "visually-hidden.scss";
 
+.main-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form__main-logo-wrapper {
+  padding-top: 52px;
+  padding-bottom: 67px;
+}
+
+.main-form__introduction {
+  border-bottom: 1px rgba(229, 229, 229, 1) solid;
+}
+
+.main-form__form {
+  padding: 0 20px;
+}
+
+
