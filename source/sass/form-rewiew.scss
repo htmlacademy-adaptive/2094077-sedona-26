@@ -1,0 +1,148 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.form-rewiew {
+  @include mixins.start();
+}
+
+.form-rewiew__introduce {
+  @include mixins.start();
+  border: 0;
+  border-style: none;
+  border-bottom: 1px rgba(229, 229, 229, 1) solid;
+}
+
+.form-rewiew__title {
+  @include mixins.start();
+  @include mixins.font700();
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form-rewiew__list {
+  @include mixins.start();
+  list-style: none;
+}
+
+.form-rewiew__item-description {
+  display: block;
+  padding-left: 16px;
+}
+
+.form-rewiew__input {
+  @include mixins.start();
+  @include mixins.font700();
+  font-size: 14px;
+  width: 280px;
+  height: 58px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 0;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.form-rewiew__input--alt {
+  width: 222px;
+}
+
+.form-rewiew__contacts {
+  @include mixins.start();
+  border: 0;
+  border-style: none;
+  border-bottom: 1px rgba(229, 229, 229, 1) solid;
+}
+
+.form-rewiew__svg-container {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/icon-phone..svg");
+  background-color: rgba(230, 230, 230, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-rewiew__svg-container--alt {
+  background-image: url("../img/icon-mail.svg");
+}
+
+.form-rewiew__impression {
+  @include mixins.start();
+  border: 0;
+  border-style: none;
+  border-bottom: 1px rgba(229, 229, 229, 1) solid;
+}
+
+.form-rewiew__item--alternative-markup {
+  @include mixins.font700();
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.form-rewiew__item-label--alt {
+  display: flex;
+  align-items: center;
+}
+
+.form-rewiew__input--radio {
+  @include mixins.start();
+  width: 46px;
+  height: 46px;
+}
+
+.form-rewiew__item-description--alternative {
+  display: block;
+}
+
+.form-rewiew__attractions {
+  @include mixins.start();
+  border: 0;
+  border-style: none;
+  border-bottom: 1px rgba(229, 229, 229, 1) solid;
+}
+
+.form-rewiew__input--checkbox {
+  @include mixins.start();
+  width: 46px;
+  height: 46px;
+}
+
+.form-rewiew__emotions {
+  @include mixins.start();
+  border: 0;
+  border-style: none;
+}
+
+.form-rewiew__input-rewiew {
+  @include mixins.start();
+  box-sizing: border-box;
+  width: 279px;
+  height: 150px;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 16px;
+  margin-bottom: 56px;
+}
+
+.form-rewiew__button {
+  display: block;
+  box-sizing: border-box;
+  width: 281px;
+  height: 58px;
+  padding: 18px 0 14px;
+}
+
+.form-rewiew__warning {
+  @include mixins.start();
+  width: 138px;
+  margin-left: auto;
+  padding-bottom: 23px;
+  color: rgba(51, 51, 51, 0.6);
+}

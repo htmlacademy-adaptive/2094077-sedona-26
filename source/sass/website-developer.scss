@@ -1,0 +1,29 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.website-developer {
+  min-height: 97px;
+}
+
+.website-developer__link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: variables.$base-textcolor;
+}
+
+.website-developer__description {
+  @include mixins.start();
+  margin-left: 94px;
+  margin-top: 40px;
+  padding-top: 7px;
+  text-transform: uppercase;
+}
+
+.website-developer__svg {
+  position: absolute;
+  right: 95px;
+  top: 0;
+}

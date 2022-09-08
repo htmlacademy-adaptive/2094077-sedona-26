@@ -1,0 +1,13 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+//@use "visually-hidden.scss";
+
+.main-footer {
+  min-height: 243px;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}

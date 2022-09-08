@@ -1,0 +1,25 @@
+@use "fonts.scss";
+@use "variables.scss";
+@use "mixins.scss";
+@use "visually-hidden.scss";
+
+.video {
+  text-align: center;
+}
+
+.video__question {
+  @include mixins.font700();
+  @include mixins.start();
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 17px;
+  margin-bottom: 30px;
+}
+
+.video__description {
+  @include mixins.start();
+  text-transform: uppercase;
+  line-height: 26px;
+  margin-bottom: 38px;
+}
