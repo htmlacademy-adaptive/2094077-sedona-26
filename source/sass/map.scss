@@ -1,3 +1,9 @@
 .map {
   display: block;
+  height: 350px;
+  position: relative;
+}
+
+.map__iframe {
+  position: absolute;
 }

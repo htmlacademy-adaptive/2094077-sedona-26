@@ -36,3 +36,26 @@
   color: variables.$base-color;
   background-color: variables.$add-color;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .search-hotel__question {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 29px;
+  }
+
+  .search-hotel__description {
+    margin-bottom: 41px;
+  }
+
+  .search-hotel__link {
+    width: 458px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .search-hotel__description {
+    margin-bottom: 46px;
+  }
+}

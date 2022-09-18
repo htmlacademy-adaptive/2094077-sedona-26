@@ -66,3 +66,51 @@
   color: variables.$add-textcolor;
   background-color: variables.$base-color;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .advantage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantage__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 194px;
+    height: 172px;
+    margin: 40px 31px 44px 31px;
+  }
+
+  .advantage__title {
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  .advantage__image {
+    width: 512px;
+  }
+
+  .advantage__image--position-number {
+    order: -1;
+  }
+
+  .advantage__sublist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .advantage__wrapper {
+    width: 318px;
+    height: 172px;
+    margin: 40px 41px 44px 41px;
+  }
+
+  .advantage__image {
+    width: 800px;
+  }
+}

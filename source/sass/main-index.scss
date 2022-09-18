@@ -1,7 +1,7 @@
 @use "fonts.scss";
 @use "variables.scss";
 @use "mixins.scss";
-//@use "visually-hidden.scss";
+@use "visually-hidden.scss";
 
 .main-index {
   display: flex;
@@ -15,4 +15,26 @@
 
 .main-index__search-hotel {
   padding: 38px 18px 49px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .main-index__main-logo-wrapper {
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  .main-index__search-hotel {
+    padding: 61px 18px 58px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-index__main-logo-wrapper {
+    padding-top: 78px;
+    padding-bottom: 90px;
+  }
+
+  .main-index__search-hotel {
+    padding: 61px 18px 66px;
+  }
 }
