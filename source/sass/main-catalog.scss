@@ -20,3 +20,29 @@
 .main-catalog__video {
   padding: 0 20px;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .main-catalog__main-logo-wrapper {
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+
+  .main-catalog__photo {
+    box-sizing: border-box;
+    padding: 0 60px 0;
+  }
+
+  .main-catalog__video {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-catalog__photo {
+    padding: 0;
+  }
+
+  .main-catalog__video {
+    padding: 0 200px;
+  }
+}

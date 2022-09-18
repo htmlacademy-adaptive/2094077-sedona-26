@@ -47,3 +47,89 @@
   text-transform: uppercase;
   padding-left: 52px;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .town {
+    position: relative;
+    text-align: center;
+    min-height: 330px;
+  }
+
+  .town__wrapper {
+    position: static;
+    width: 194px;
+    margin: 60px 31px 59px;
+  }
+
+  .town__title {
+    font-size: 21px;
+    padding-left: 0;
+    margin-top: 158px;
+    margin-bottom: 24px;
+  }
+
+  .town__svg-container {
+    top: 60px;
+    left: 90px;
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-house-advantages.svg");
+    background-size: cover;
+  }
+
+  .town__svg-container--food {
+    background-image: url("../img/icon-burger-advantages.svg");
+    width: 76px;
+    height: 68px;
+  }
+
+  .town__svg-container--gift {
+    background-image: url("../img/icon-gift-advantages.svg");
+    width: 64px;
+    height: 75px;
+  }
+
+  .town__description {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .town__wrapper {
+    position: static;
+    width: 318px;
+    margin: 40px 41px 44px 41px;
+  }
+
+  .town__title {
+    font-size: 21px;
+    padding-left: 0;
+    margin-top: 158px;
+    margin-bottom: 24px;
+  }
+
+  .town__svg-container {
+    top: 60px;
+    left: 162px;
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-house-advantages.svg");
+    background-size: cover;
+  }
+
+  .town__svg-container--food {
+    background-image: url("../img/icon-burger-advantages.svg");
+    width: 76px;
+    height: 68px;
+  }
+
+  .town__svg-container--gift {
+    background-image: url("../img/icon-gift-advantages.svg");
+    width: 64px;
+    height: 75px;
+  }
+
+  .town__description {
+    padding-left: 0;
+  }
+}

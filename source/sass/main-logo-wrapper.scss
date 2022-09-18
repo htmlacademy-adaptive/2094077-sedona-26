@@ -26,3 +26,15 @@
   display: block;
   margin: 0 auto;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .main-logo-wrapper__sedona-logo {
+    width: 461px;
+    height: 350px;
+  }
+
+  .main-logo-wrapper__sedona-logo--alt {
+    width: 457;
+    height: 78px;
+  }
+}

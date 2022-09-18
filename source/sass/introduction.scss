@@ -1,7 +1,7 @@
 @use "fonts.scss";
 @use "variables.scss";
 @use "mixins.scss";
-//@use "visually-hidden.scss";
+@use "visually-hidden.scss";
 
 .introduction__title {
   @include mixins.font700();
@@ -21,4 +21,33 @@
   padding: 0 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .introduction__title {
+    font-size: 21px;
+    margin-top: 47px;
+  }
+
+  .introduction__description {
+    margin-bottom: 55px;
+  }
+
+  .introduction__wrap {
+    display: none;
+  }
+
+  .introduction__wrap--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .introduction__title {
+    margin-top: 59px;
+  }
+
+  .introduction__description {
+    margin-bottom: 44px;
+  }
 }

@@ -1,7 +1,7 @@
 @use "fonts.scss";
 @use "variables.scss";
 @use "mixins.scss";
-//@use "visually-hidden.scss";
+@use "visually-hidden.scss";
 
 .page {
   height: 100%;
@@ -26,4 +26,16 @@
   margin: 0 auto;
   color: variables.$base-textcolor;
   background-color: variables.$base-color;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .page__body-wrapper {
+    width: variables.$tablet-width;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .page__body-wrapper {
+    width: variables.$desktop-width;
+  }
 }

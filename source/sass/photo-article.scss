@@ -23,6 +23,7 @@
 
 .photo-article__author {
   @include mixins.start();
+  color: variables.$add-textcolor;
 }
 
 .photo-article__author-name {
@@ -33,11 +34,15 @@
   @include mixins.start();
   display: inline-block;
   position: absolute;
-  top: 349px;
-  left: 0;
+  bottom: 0;
+  right: 257px;
   width: 23px;
   background-color: variables.$base-color;
   border: 0;
+}
+
+.photo-article__svg {
+  fill: rgba(0, 0, 0, 1);
 }
 
 .photo-article__like-number {
@@ -46,4 +51,113 @@
   display: inline-block;
   margin-left: 37px;
   margin-top: 16px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .photo-article {
+    background-color: rgba(242, 242, 242, 1);
+  }
+
+  .photo-article__title {
+    margin-top: 22px;
+    margin-left: 20px;
+  }
+
+  .photo-article__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo__item:nth-child(1) .photo-article__image {
+    width: 648px;
+    height: 400px;
+  }
+
+  .photo-article__author {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  .photo-article__button {
+    bottom: 29px;
+    right: 48px;
+    width: 23px;
+    background-color: rgba(242, 242, 242, 1);
+  }
+
+  .photo__item:nth-child(1) .photo-article__button {
+    right: 61px;
+    bottom: 28px;
+  }
+
+  .photo-article__like-number {
+    position: absolute;
+    bottom: 27px;
+    right: 20px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .photo-article {
+    color: variables.$base-color;
+  }
+
+  .photo-article__title {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 400px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: 0;
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-bottom: 36px;
+  }
+
+  .photo__item:nth-child(1) .photo-article__title {
+    width: 1200px;
+  }
+
+  .photo-article__image {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo__item:nth-child(1) .photo-article__image {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photo-article__author {
+    position: absolute;
+    bottom: 0;
+    color: variables.$base-color;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-bottom: 15px;
+  }
+
+  .photo-article__button {
+    bottom: 29px;
+    right: 48px;
+    width: 23px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .photo__item:nth-child(1) .photo-article__button {
+    right: 61px;
+    bottom: 28px;
+  }
+
+  .photo-article__svg {
+    fill: variables.$base-color;
+  }
+
+  .photo-article__like-number {
+    position: absolute;
+    bottom: 27px;
+    right: 20px;
+  }
 }
