@@ -64,3 +64,40 @@
   background-color: variables.$add-color;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
+
+@media (min-width: variables.$tablet-width) {
+  .main-navigation__list {
+    flex-direction: row;
+  }
+
+  .main-navigation__item {
+    background-color: variables.$base-color;
+    min-width: 153px;
+  }
+
+  .main-navigation__link {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    color: variables.$base-textcolor;
+    background-color: variables.$base-color;
+  }
+
+  .main-navigation__item:nth-child(2) {
+    margin-right: 156px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-navigation__item {
+    min-width: 240px;
+  }
+
+  .main-navigation__item:nth-child(2) {
+    margin-right: 240px;
+  }
+}

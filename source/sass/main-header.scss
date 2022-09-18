@@ -49,8 +49,40 @@
   fill: rgba(129, 179, 210, 0.3);
 }
 
-// .main-header__main-navigation {
-//   &--closed {
-//     display: none;  //при нажатии на меню убирает класс
-//   }
-// }
+.main-header__main-navigation {
+  &--closed {
+    display: none;  //при нажатии на меню убирает класс
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .main-header__wrapper {
+    width: variables.$tablet-width;
+    display: flex;
+  }
+
+  .main-header__logo-link {
+    position: absolute;
+    margin-left: 0;
+    left: 291px;
+    z-index: 10;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__main-navigation {
+    display: block;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-header__wrapper {
+    width: variables.$desktop-width;
+  }
+
+  .main-header__logo-link {
+    left: 507px;
+  }
+}
