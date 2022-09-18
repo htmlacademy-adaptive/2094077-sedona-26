@@ -20,3 +20,29 @@
 .main-form__form {
   padding: 0 20px;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .main-form__main-logo-wrapper {
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+
+  .main-form__introduction {
+    border-bottom: 0;
+  }
+
+  .main-form__form {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-form__main-logo-wrapper {
+    padding-top: 101px;
+    padding-bottom: 120px;
+  }
+
+  .main-form__form {
+    padding: 0 120px;
+  }
+}
