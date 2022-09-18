@@ -18,3 +18,20 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .hashtag {
+    min-height: 26px;
+  }
+
+  .hashtag__description {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .hashtag__description {
+    margin-left: 105px;
+  }
+}
