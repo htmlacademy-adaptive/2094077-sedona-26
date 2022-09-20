@@ -64,8 +64,12 @@
                 <p class="advantage__number">— №1 —</p>
                 <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantage__image" src="./img/photo-1-advantages.jpg" width="520" height="260" alt="Несколько двухэтажных местных зданий на фоне красной скалы. На переднем плане растительность. Выделяется наличие множества флагов, преимущественно государственный флаг Соединенных Штатов Америки.">
-              <ul class="advantage__sublist">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/photo-1-advantages-desktop.jpg 1x,  ./img/photo-1-advantages-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/photo-1-advantages-tablet.jpg 1x,  ./img/photo-1-advantages-tablet@2x.jpg 2x">
+                <img class="advantage__image" src="./img/photo-1-advantages.jpg" width="520" height="260" srcset="./img/photo-1-advantages@2x.jpg 2x" alt="Несколько двухэтажных местных зданий на фоне красной скалы. На переднем плане растительность. Выделяется наличие множества флагов, преимущественно государственный флаг Соединенных Штатов Америки.">
+              </picture>
+                <ul class="advantage__sublist">
                 <li class="advantage__subitem town">
                   <div class="town__wrapper">
                     <h4 class="town__title">Жильё</h4>
@@ -98,7 +102,11 @@
                 <p class="advantage__number">— №2 —</p>
                 <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img class="advantage__image advantage__image--position-number" src="./img/photo-2-advantages.jpg" width="520" height="260" alt="Мост дьявола.">
+              <picture>
+                <source class="advantage__image--position-number" media="(min-width: 1200px)" srcset="./img/photo-2-advantages-desktop.jpg 1x,  ./img/photo-2-advantages-desktop@2x.jpg 2x">
+                <source class="advantage__image--position-number" media="(min-width: 768px)" srcset="./img/photo-2-advantages-tablet.jpg 1x,  ./img/photo-2-advantages-tablet@2x.jpg 2x">
+                <img class="advantage__image advantage__image--position-number" src="./img/photo-2-advantages.jpg" width="520" height="260" srcset="./img/photo-2-advantages@2x.jpg 2x" alt="Мост дьявола.">
+              </picture>
             </li>
             <li class="advantages__item advantage advantage--color-basic advantage--color-additional">
               <div class="advantage__wrapper">

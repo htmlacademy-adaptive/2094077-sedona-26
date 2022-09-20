@@ -9,6 +9,11 @@
   background-color: #426a96;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/welcomesedona-back@2x");
+    background-size: 901px auto;
+  }
 }
 
 .main-logo-wrapper::after {
@@ -28,6 +33,28 @@
 }
 
 @media (min-width: variables.$tablet-width) {
+  @media (min-resolution: 2dppx) {
+    .main-logo-wrapper {
+      background-image: url("../img/welcomesedona-back-desktop@2x.jpg");
+    }
+  }
+
+  .main-logo-wrapper {
+    background-image: url("../img/welcomesedona-back-desktop.jpg");
+  }
+
+  .main-logo-wrapper__sedona-logo {
+    width: 461px;
+    height: 350px;
+  }
+
+  .main-logo-wrapper__sedona-logo--alt {
+    width: 457;
+    height: 78px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
   .main-logo-wrapper__sedona-logo {
     width: 461px;
     height: 350px;
