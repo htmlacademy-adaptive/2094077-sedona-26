@@ -138,8 +138,12 @@
 @media (min-width: variables.$desktop-width) {
   .advantage__wrapper {
     width: 318px;
-    height: 172px;
-    margin: 40px 41px 44px 41px;
+    height: 148px;
+    margin: 47px 41px 50px 41px;
+  }
+
+  .advantage__wrapper--alt {
+    margin-top: 34px;
   }
 
   .advantage__wrap {
