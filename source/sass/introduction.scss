@@ -15,6 +15,11 @@
   text-align: center;
 }
 
+.introduction__title--alternative {
+  margin-top: 38px;
+  margin-bottom: 21px;
+}
+
 .introduction__description {
   @include mixins.start();
   margin-bottom: 16px;
@@ -46,11 +51,17 @@
     margin-top: 65px;
   }
 
+  .introduction__title--alternative {
+    margin-top: 65px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
   .introduction__description {
     margin-bottom: 55px;
   }
 
-  .introduction__deescription--alt {
+  .introduction__description--alt {
     margin-bottom: 79px;
   }
 

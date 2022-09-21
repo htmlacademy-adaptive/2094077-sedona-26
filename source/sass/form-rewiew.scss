@@ -18,11 +18,15 @@
   @include mixins.start();
   @include mixins.font700();
   text-align: center;
-  padding-top: 24px;
+  padding-top: 42px;
   padding-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.form-rewiew__title--alt {
+  padding-top: 33px;
 }
 
 .form-rewiew__list {
@@ -38,7 +42,7 @@
 .form-rewiew__input {
   @include mixins.start();
   @include mixins.font700();
-  font-size: 14px;
+  font-size: 18px;
   width: 280px;
   height: 58px;
   padding: 16px;
@@ -151,6 +155,11 @@
   .form-rewiew {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .form-rewiew__title {
+    font-size: 21px;
+    padding-top: 55px;
   }
 
   .form-rewiew__introduce {
