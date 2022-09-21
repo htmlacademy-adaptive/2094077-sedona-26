@@ -23,14 +23,35 @@
   text-align: center;
 }
 
+.introduction__wrap--tablet {
+  display: none;
+}
+
+.introduction__wrap--desktop {
+  display: none;
+}
+
+.introduction__wrap {
+  display: block;
+}
+
 @media (min-width: variables.$tablet-width) {
   .introduction__title {
-    font-size: 21px;
+    font-size: 26px;
     margin-top: 47px;
+  }
+
+  .introduction__title--alt {
+    font-size: 30px;
+    margin-top: 65px;
   }
 
   .introduction__description {
     margin-bottom: 55px;
+  }
+
+  .introduction__deescription--alt {
+    margin-bottom: 79px;
   }
 
   .introduction__wrap {
@@ -44,10 +65,10 @@
 
 @media (min-width: variables.$desktop-width) {
   .introduction__title {
-    margin-top: 59px;
+    margin-top: 98px;
   }
 
   .introduction__description {
-    margin-bottom: 41px;
+    margin-bottom: 86px;
   }
 }

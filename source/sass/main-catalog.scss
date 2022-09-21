@@ -38,6 +38,11 @@
 }
 
 @media (min-width: variables.$desktop-width) {
+  .main-catalog__main-logo-wrapper {
+    padding-top: 101px;
+    padding-bottom: 122px;
+  }
+
   .main-catalog__photo {
     padding: 0;
   }
