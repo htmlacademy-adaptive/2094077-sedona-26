@@ -155,9 +155,9 @@ copyImages,
 gulp.parallel(
 styles,
 html,
-scripts,
+// scripts,
 svg,
-sprite,
+// sprite,
 createWebp
 ),
 gulp.series(
