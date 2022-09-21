@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
@@ -46,8 +46,8 @@
         </div>
         <section class="main-form__introduction introduction">
           <h2 class="visually-hidden">Введение.</h2>
-          <p class="introduction__title">Оставьте свой отзыв</p>
-          <p class="introduction__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="introduction__title introduction__title--alternative">Оставьте свой отзыв</p>
+          <p class="introduction__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="introduction__wrap--tablet introduction__wrap--desktop"> а также о посещенных вами достопримечательностях</p>
         </section>
         <section class="main-form__form">
           <h2 class="visually-hidden">Форма отзыва.</h2>
@@ -71,7 +71,7 @@
                 </li>
                 <li class="form-rewiew__item">
                   <label class="form-rewiew__item-label" for="patronymic">
-                    <span class="form-rewiew__item-description">Отчество:</span>
+                    <span class="form-rewiew__item-description">ОТЧЕСТВО:</span>
                     <input class="form-rewiew__input" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
                   </label>
                 </li>
@@ -84,14 +84,14 @@
               <ul class="form-rewiew__list">
                 <li class="form-rewiew__item">
                   <label class="form-rewiew__item-label" for="phone-number">
-                    <span class="form-rewiew__item-description">Контактный телефон*:</span>
+                    <span class="form-rewiew__item-description">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
                     <input class="form-rewiew__input form-rewiew__input--alt" type="tel" name="phone-number" id="phone-number" placeholder="Введите телефон" required>
                     <span class="form-rewiew__svg-container"></span>
                   </label>
                 </li>
                 <li class="form-rewiew__item">
                   <label class="form-rewiew__item-label" for="e-mail">
-                    <span class="form-rewiew__item-description">Электронная почта*:</span>
+                    <span class="form-rewiew__item-description">ЭЛЕКТРОННАЯ ПОЧТА*:</span>
                     <input class="form-rewiew__input form-rewiew__input--alt" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
                     <span class="form-rewiew__svg-container form-rewiew__svg-container--alt"></span>
                   </label>
@@ -124,7 +124,7 @@
               </ul>
             </fieldset>
             <fieldset class="form-rewiew__attractions">
-              <legend class="form-rewiew__title">
+              <legend class="form-rewiew__title form-rewiew__title--alt">
                 Посещенные достопримечательности:
               </legend>
               <ul class="form-rewiew__list">
@@ -155,7 +155,7 @@
               </ul>
             </fieldset>
             <fieldset class="form-rewiew__emotions">
-              <legend class="form-rewiew__title">
+              <legend class="form-rewiew__title form-rewiew__title--alt">
                 Опишите свои эмоции:
               </legend>
               <textarea class="form-rewiew__input-rewiew" name="rewiew" id="rewiew" placeholder="Опишите подробно все свои восторги"></textarea>

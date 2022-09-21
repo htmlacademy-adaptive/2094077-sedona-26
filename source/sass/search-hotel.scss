@@ -37,6 +37,18 @@
   background-color: variables.$add-color;
 }
 
+.search-hotel__wrap--tablet {
+  display: none;
+}
+
+.search-hotel__wrap--desktop {
+  display: none;
+}
+
+.search-hotel__wrap {
+  display: block;
+}
+
 @media (min-width: variables.$tablet-width) {
   .search-hotel__question {
     font-size: 30px;
@@ -52,10 +64,38 @@
     width: 458px;
     padding-top: 15px;
   }
+
+  .search-hotel__wrap--desktop {
+    display: none;
+  }
+
+  .search-hotel__wrap {
+    display: none;
+  }
+
+  .search-hotel__wrap--tablet {
+    display: block;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .search-hotel__question {
+    margin-top: 14px;
+  }
+
   .search-hotel__description {
     margin-bottom: 46px;
+  }
+
+  .search-hotel__wrap {
+    display: none;
+  }
+
+  .search-hotel__wrap--tablet {
+    display: none;
+  }
+
+  .search-hotel__wrap--desktop {
+    display: block;
   }
 }

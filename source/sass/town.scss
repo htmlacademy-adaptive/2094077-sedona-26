@@ -6,7 +6,7 @@
 .town__wrapper {
   position: relative;
   width: 284px;
-  margin: 25px 18px 52px;
+  margin: 31px 18px 16px;
 }
 
 .town__title {
@@ -16,12 +16,12 @@
   line-height: 26px;
   text-transform: uppercase;
   color: variables.$base-textcolor;
-  padding-left: 52px;
+  padding-left: 47px;
 }
 
 .town__svg-container {
   position: absolute;
-  top: 0;
+  top: -7px;
   left: 0;
   width: 39px;
   height: 37px;
@@ -45,7 +45,16 @@
 .town__description {
   @include mixins.start();
   text-transform: uppercase;
-  padding-left: 52px;
+  padding-left: 47px;
+  padding-top: 16px;
+}
+
+.town__wrap--tablet {
+  display: none;
+}
+
+.town__wrap--desktop {
+  display: none;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -64,7 +73,7 @@
   .town__title {
     font-size: 21px;
     padding-left: 0;
-    margin-top: 158px;
+    margin-top: 150px;
     margin-bottom: 24px;
   }
 
@@ -91,6 +100,15 @@
 
   .town__description {
     padding-left: 0;
+    padding-top: 0;
+  }
+
+  .town__wrap--tablet {
+    display: block;
+  }
+
+  .town__wrap--desktop {
+    display: none;
   }
 }
 
@@ -131,5 +149,13 @@
 
   .town__description {
     padding-left: 0;
+  }
+
+  .town__wrap--tablet {
+    display: none;
+  }
+
+  .town__wrap--desktop {
+    display: block;
   }
 }
