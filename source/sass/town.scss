@@ -48,6 +48,14 @@
   padding-left: 52px;
 }
 
+.town__wrap--tablet {
+  display: none;
+}
+
+.town__wrap--desktop {
+  display: none;
+}
+
 @media (min-width: variables.$tablet-width) {
   .town {
     position: relative;
@@ -92,6 +100,14 @@
   .town__description {
     padding-left: 0;
   }
+
+  .town__wrap--tablet {
+    display: block;
+  }
+
+  .town__wrap--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
@@ -131,5 +147,13 @@
 
   .town__description {
     padding-left: 0;
+  }
+
+  .town__wrap--tablet {
+    display: none;
+  }
+
+  .town__wrap--desktop {
+    display: block;
   }
 }

@@ -50,6 +50,18 @@
   text-transform: uppercase;
 }
 
+.advantage__wrap--tablet {
+  display: none;
+}
+
+.advantage__wrap--desktop {
+  display: none;
+}
+
+.advantage__wrap {
+  display: block;
+}
+
 .advantage__image {
   display: block;
   background-size: cover;
@@ -101,6 +113,18 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .advantage__wrap {
+    display: none;
+  }
+
+  .advantage__wrap--desktop {
+    display: none;
+  }
+
+  .advantage__wrap--tablet {
+    display: block;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
@@ -108,6 +132,18 @@
     width: 318px;
     height: 172px;
     margin: 40px 41px 44px 41px;
+  }
+
+  .advantage__wrap {
+    display: none;
+  }
+
+  .advantage__wrap--tablet {
+    display: none;
+  }
+
+  .advantage__wrap--desktop {
+    display: block;
   }
 
   .advantage__image {
