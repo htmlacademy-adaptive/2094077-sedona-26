@@ -34,6 +34,14 @@ return gulp.src('source/*.html')
 .pipe(gulp.dest('build'));
 }
 
+// Scripts
+
+const scripts = () => {
+return gulp.src('source/js/script.js')
+.pipe(gulp.dest('build/js'))
+.pipe(browser.stream());
+}
+
 // Images
 
 const optimizeImages = () => {
