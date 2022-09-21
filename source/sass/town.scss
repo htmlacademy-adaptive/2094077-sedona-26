@@ -6,7 +6,7 @@
 .town__wrapper {
   position: relative;
   width: 284px;
-  margin: 25px 18px 52px;
+  margin: 31px 18px 16px;
 }
 
 .town__title {
@@ -16,12 +16,12 @@
   line-height: 26px;
   text-transform: uppercase;
   color: variables.$base-textcolor;
-  padding-left: 52px;
+  padding-left: 47px;
 }
 
 .town__svg-container {
   position: absolute;
-  top: 0;
+  top: -7px;
   left: 0;
   width: 39px;
   height: 37px;
@@ -45,7 +45,8 @@
 .town__description {
   @include mixins.start();
   text-transform: uppercase;
-  padding-left: 52px;
+  padding-left: 47px;
+  padding-top: 16px;
 }
 
 .town__wrap--tablet {
