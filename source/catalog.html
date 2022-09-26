@@ -10,7 +10,7 @@
     <div class="page__body-wrapper">
 <!-- Шапка/навигация -->
       <header class="main-header">
-        <div class="main-header__wrapper">
+        <div class="main-header__wrapper main-header__wrapper--without-js">
           <a class="main-header__logo-link" href="./index.html">
             <img class="main-header__logo-img" src="./img/sedona-logo-nav.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
@@ -20,7 +20,7 @@
               <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
             </svg>
           </button>
-          <nav class="main-header__main-navigation main-header__main-navigation--closed main-navigation">
+          <nav class="main-header__main-navigation main-header__main-navigation--closed main-navigation main-navigation--without-js">
             <ul class="main-navigation__list">
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="./index.html">Главная</a>
@@ -47,7 +47,7 @@
         <section class="main-catalog__introduction introduction">
           <h2 class="visually-hidden">Введение.</h2>
           <p class="introduction__title introduction__title--alt">Фото и видео</p>
-          <p class="introduction__description introduction__deescription--alt">Не можете решиться на путешествие<br class="introduction__wrap"> из-за курса?<br class="introduction__wrap--tablet introduction__wrap--desktop"> Фотографии помогут вам<br class="introduction__wrap"> забыть о политике и экономике.</p>
+          <p class="introduction__description introduction__description--alt">Не можете решиться на путешествие<br class="introduction__wrap introduction__wrap--mobile"> из-за курса?<br class="introduction__wrap introduction__wrap--tablet introduction__wrap--desktop"> Фотографии помогут вам<br class="introduction__wrap introduction__wrap--mobile"> забыть о политике и экономике.</p>
         </section>
         <section class="main-catalog__photo photo">
           <h2 class="visually-hidden">Список фотографий.</h2>
@@ -55,15 +55,17 @@
             <li class="photo__item">
               <article class="photo__article photo-article">
                 <h3 class="photo-article__title">неродные просторы</h3>
-                <picture class="photo-article__image">
-                  <source media="(min-width: 1200px)" srcset="./img/photo-1-catalog-desktop.jpg 1x,  ./img/photo-1-catalog-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/photo-1-catalog-tablet.jpg 1x,  ./img/photo-1-catalog-tablet@2x.jpg 2x">
-                  <img class="photo-article__image" src="./img/photo-1-catalog.jpg" width="280" height="280" srcset="./img/photo-1-catalog@2x.png 2x" alt="Дорога на закате дня.">
-                </picture>
+                <a class="photo-article__link" href="#">
+                  <picture class="photo-article__image">
+                    <source media="(min-width: 1200px)" srcset="./img/photo-1-catalog-desktop.jpg 1x,  ./img/photo-1-catalog-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/photo-1-catalog-tablet.jpg 1x,  ./img/photo-1-catalog-tablet@2x.jpg 2x">
+                    <img class="photo-article__image" src="./img/photo-1-catalog.jpg" width="280" height="280" srcset="./img/photo-1-catalog@2x.png 2x" alt="Дорога на закате дня.">
+                  </picture>
+                </a>
                 <p class="photo-article__author">Автор фото:<cite class="photo-article__author-name"> Борис</cite></p>
                 <button class="photo-article__button" type="button">
                   <svg class="photo-article__svg" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/>
+                    <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/>
                   </svg>
                 </button>
                 <p class="photo-article__like-number">1350</p>
@@ -72,15 +74,17 @@
             <li class="photo__item">
               <article class="photo__article photo-article">
                 <h3 class="photo-article__title">Местная растительность</h3>
-                <picture class="photo-article__image">
-                  <source media="(min-width: 1200px)" srcset="./img/photo-2-catalog-desktop.jpg 1x,  ./img/photo-2-catalog-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/photo-2-catalog-tablet.jpg 1x,  ./img/photo-2-catalog-tablet@2x.jpg 2x">
-                  <img class="photo-article__image" src="./img/photo-2-catalog.jpg" width="280" height="280" srcset="./img/photo-2-catalog@2x.jpg 2x" alt="Один из представителей семейства кактусовых на фоне скалистой местности.">
-                </picture>
+                <a class="photo-article__link" href="#">
+                  <picture class="photo-article__image">
+                    <source media="(min-width: 1200px)" srcset="./img/photo-2-catalog-desktop.jpg 1x,  ./img/photo-2-catalog-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/photo-2-catalog-tablet.jpg 1x,  ./img/photo-2-catalog-tablet@2x.jpg 2x">
+                    <img class="photo-article__image" src="./img/photo-2-catalog.jpg" width="280" height="280" srcset="./img/photo-2-catalog@2x.jpg 2x" alt="Один из представителей семейства кактусовых на фоне скалистой местности.">
+                  </picture>
+                </a>
                 <p class="photo-article__author">Автор фото:<cite class="photo-article__author-name"> Сергей</cite></p>
                 <button class="photo-article__button" type="button">
                   <svg class="photo-article__svg" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/>
+                    <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/>
                   </svg>
                 </button>
                 <p class="photo-article__like-number">143</p>
@@ -89,15 +93,17 @@
             <li class="photo__item">
               <article class="photo__article photo-article">
                 <h3 class="photo-article__title">Дорога на север</h3>
-                <picture class="photo-article__image">
-                  <source media="(min-width: 1200px)" srcset="./img/photo-3-catalog-desktop.jpg 1x,  ./img/photo-3-catalog-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/photo-3-catalog-tablet.jpg 1x,  ./img/photo-3-catalog-tablet@2x.jpg 2x">
-                  <img class="photo-article__image" src="./img/photo-3-catalog.jpg" width="280" height="280" srcset="./img/photo-3-catalog@2x.jpg 2x" alt="Дорожный серпантин среди скалистого леса.">
-                </picture>
+                <a class="photo-article__link" href="#">
+                  <picture class="photo-article__image">
+                    <source media="(min-width: 1200px)" srcset="./img/photo-3-catalog-desktop.jpg 1x,  ./img/photo-3-catalog-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/photo-3-catalog-tablet.jpg 1x,  ./img/photo-3-catalog-tablet@2x.jpg 2x">
+                    <img class="photo-article__image" src="./img/photo-3-catalog.jpg" width="280" height="280" srcset="./img/photo-3-catalog@2x.jpg 2x" alt="Дорожный серпантин среди скалистого леса.">
+                  </picture>
+                </a>
                 <p class="photo-article__author">Автор фото:<cite class="photo-article__author-name"> Петр</cite></p>
                 <button class="photo-article__button" type="button">
                   <svg class="photo-article__svg" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/>
+                    <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/>
                   </svg>
                 </button>
                 <p class="photo-article__like-number">96</p>
@@ -106,15 +112,17 @@
             <li class="photo__item">
               <article class="photo__article photo-article">
                 <h3 class="photo-article__title">Мост дьявола</h3>
-                <picture class="photo-article__image">
-                  <source media="(min-width: 1200px)" srcset="./img/photo-4-catalog-desktop.jpg 1x,  ./img/photo-4-catalog-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/photo-4-catalog-tablet.jpg 1x,  ./img/photo-4-catalog-tablet@2x.jpg 2x">
-                  <img class="photo-article__image" src="./img/photo-4-catalog.jpg" width="280" height="280" srcset="./img/photo-4-catalog@2x.jpg 2x" alt="Мост дьявола.">
-                </picture>
+                <a class="photo-article__link" href="#">
+                  <picture class="photo-article__image">
+                    <source media="(min-width: 1200px)" srcset="./img/photo-4-catalog-desktop.jpg 1x,  ./img/photo-4-catalog-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/photo-4-catalog-tablet.jpg 1x,  ./img/photo-4-catalog-tablet@2x.jpg 2x">
+                    <img class="photo-article__image" src="./img/photo-4-catalog.jpg" width="280" height="280" srcset="./img/photo-4-catalog@2x.jpg 2x" alt="Мост дьявола.">
+                  </picture>
+                </a>
                 <p class="photo-article__author">Автор фото:<cite class="photo-article__author-name"> Антон</cite></p>
                 <button class="photo-article__button" type="button">
                   <svg class="photo-article__svg" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/>
+                    <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/>
                   </svg>
                 </button>
                 <p class="photo-article__like-number">254</p>
@@ -125,21 +133,17 @@
         <section class="main-catalog__video video">
           <h2 class="visually-hidden">Видеопрезентация.</h2>
           <p class="video__question">Все еще сомневаетесь?</p>
-          <p class="video__description">Смотрите видеопрезентацию и<br class="video__wrap"> скорее за билетами, пока они<br class="video__wrap--tablet video__wrap--desktop"> не<br class="video__wrap"> подорожали в очередной раз!</p>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="./img/video-desktop.jpg 1x,  ./img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg 1x,  ./img/video-tablet@2x.jpg 2x">
-            <img class="video__image" src="./img/video.jpg" width="280" height="177" srcset="./img/video@2x.jpg 2x" alt="Видео.">
-          </picture>
+          <p class="video__description">Смотрите видеопрезентацию и<br class="video__wrap video__wrap--mobile"> скорее за билетами, пока они<br class="video__wrap video__wrap--tablet video__wrap--desktop"> не<br class="video__wrap video__wrap--mobile"> подорожали в очередной раз!</p>
+          <div class="video__image-container"></div>
         </section>
       </main>
 <!--   Подвал -->
       <footer class="main-footer">
         <div class="main-footer__wrapper">
           <h2 class="visually-hidden">Контакты.</h2>
-          <section class="main-footer__hashtag hashtag">
+          <section class="main-footer__hashtag hashtag hashtag--alt">
             <h3 class="visually-hidden">Хэштег.</h3>
-            <p class="hashtag__description">#visitsedona</p>
+            <p class="hashtag__description hashtag__description--alt">#visitsedona</p>
           </section>
           <section class="main-footer__social social">
             <h3 class="visually-hidden">Социальные сети.</h3>
@@ -172,7 +176,7 @@
           </section>
           <section class="main-footer__website-developer website-developer">
             <h3 class="visually-hidden">Контакт разработчика сайта.</h3>
-            <a class="website-developer__link" href="https://htmlacademy.ru/">
+            <a class="website-developer__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">Ссылка на сайт разработчика HTML academy.</span>
               <p class="website-developer__description">Разработано</p>
               <svg class="website-developer__svg" width="27" aria-hidden="true" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -10,7 +10,7 @@
 <!-- Шапка/навигация -->
     <div class="page__body-wrapper">
       <header class="main-header">
-        <div class="main-header__wrapper">
+        <div class="main-header__wrapper main-header__wrapper--without-js">
           <a class="main-header__logo-link" href="./index.html">
             <img class="main-header__logo-img" src="./img/sedona-logo-nav.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
@@ -20,7 +20,7 @@
               <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
             </svg>
           </button>
-          <nav class="main-header__main-navigation main-header__main-navigation--closed main-navigation">
+          <nav class="main-header__main-navigation main-header__main-navigation--closed main-navigation main-navigation--without-js">
             <button class="main-navigation__button-close main-navigation__button-close--closed" type="button">
               <span class="visually-hidden">Закрыть меню.</span>
               <svg class="main-navigation__close-menu" aria-hidden="true" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,17 +52,17 @@
         </div>
         <section class="main-index__introduction introduction">
           <h2 class="visually-hidden">Введение.</h2>
-          <p class="introduction__title">Седона — небольшой<br class="introduction__wrap"> городок в Аризоне,<br class="introduction__wrap introduction__wrap--tablet"> заслуживающий большего!</p>
-          <p class="introduction__description">Рассмотрим 5 причин, по которым<br class="introduction__wrap"> Седона круче, чем Гранд-Каньон!</p>
+          <p class="introduction__title">Седона — небольшой<br class="introduction__wrap introduction__wrap--mobile"> городок в Аризоне,<br class="introduction__wrap introduction__wrap--mobile introduction__wrap--tablet introduction__wrap--desktop"> заслуживающий большего!</p>
+          <p class="introduction__description">Рассмотрим 5 причин, по которым<br class="introduction__wrap introduction__wrap--mobile"> Седона круче, чем Гранд-Каньон!</p>
         </section>
         <section class="main-index__advantages advantages">
           <h2 class="visually-hidden">Преимущества.</h2>
           <ul class="advantages__list">
-            <li class="advantages__item advantage advantage--color-basic">
+            <li class="advantages__item advantage advantage--color-basic advantage--mask">
               <div class="advantage__wrapper">
-                <h3 class="advantage__title">Настоящий<br class="advantage__wrap--tablet advantage__wrap--desktop"> городок</h3>
+                <h3 class="advantage__title">Настоящий<br class="advantage__wrap advantage__wrap--tablet advantage__wrap--desktop"> городок</h3>
                 <p class="advantage__number">— №1 —</p>
-                <p class="advantage__description">Седона не аттракцион для туристов,<br class="advantage__wrap--desktop"> там течёт своя жизнь</p>
+                <p class="advantage__description">Седона не аттракцион для туристов,<br class="advantage__wrap advantage__wrap--desktop"> там течёт своя жизнь</p>
               </div>
               <picture>
                 <source media="(min-width: 1200px)" srcset="./img/photo-1-advantages-desktop.jpg 1x,  ./img/photo-1-advantages-desktop@2x.jpg 2x">
@@ -75,7 +75,7 @@
                     <h4 class="town__title">Жильё</h4>
                     <div class="town__svg-container">
                     </div>
-                    <p class="town__description">Рекомендуем пожить в настоящем<br class="town__wrap--desktop"> мотеле, всё как в кино!</p>
+                    <p class="town__description">Рекомендуем пожить в настоящем<br class="town__wrap town__wrap--desktop"> мотеле, всё как в кино!</p>
                   </div>
                 </li>
                 <li class="advantage__subitem town">
@@ -83,50 +83,50 @@
                     <h4 class="town__title">Еда</h4>
                     <div class="town__svg-container town__svg-container--food">
                     </div>
-                    <p class="town__description">Всегда заказывайте<br class="town__wrap--tablet"> фирменный бургер,<br class="town__wrap--tablet town__wrap--desktop"> вы не разочаруетесь!</p>
+                    <p class="town__description">Всегда заказывайте<br class="town__wrap town__wrap--tablet"> фирменный бургер,<br class="town__wrap town__wrap--tablet town__wrap--desktop"> вы не разочаруетесь!</p>
                   </div>
                 </li>
                 <li class="advantage__subitem town">
-                  <div class="town__wrapper">
+                  <div class="town__wrapper town__wrapper--alt">
                     <h4 class="town__title">Сувениры</h4>
                     <div class="town__svg-container town__svg-container--gift">
                     </div>
-                    <p class="town__description">Не только китайского,<br class="town__wrap--desktop"> но и местного производства!</p>
+                    <p class="town__description">Не только китайского,<br class="town__wrap town__wrap--desktop"> но и местного производства!</p>
                   </div>
                 </li>
               </ul>
             </li>
             <li class="advantages__item advantage advantage--color-basic">
-              <div class="advantage__wrapper">
-                <h3 class="advantage__title">Там есть<br class="advantage__wrap--tablet advantage__wrap--desktop"> мост дьявола</h3>
+              <div class="advantage__wrapper advantage__wrapper--alt advantage__wrapper--margin">
+                <h3 class="advantage__title">Там есть<br class="advantage__wrap advantage__wrap--tablet advantage__wrap--desktop"> мост дьявола</h3>
                 <p class="advantage__number">— №2 —</p>
-                <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="advantage__description">Да, по нему можно пройти!<br class="town__wrap town__wrap--desktop"> Если вы осмелитесь, конечно</p>
               </div>
-              <picture class="advantage__image--position-number">
+              <picture class="advantage__picture advantage__picture--position-number">
                 <source media="(min-width: 1200px)" srcset="./img/photo-2-advantages-desktop.jpg 1x,  ./img/photo-2-advantages-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo-2-advantages-tablet.jpg 1x,  ./img/photo-2-advantages-tablet@2x.jpg 2x">
                 <img class="advantage__image advantage__image--position-number" src="./img/photo-2-advantages.jpg" width="520" height="260" srcset="./img/photo-2-advantages@2x.jpg 2x" alt="Мост дьявола.">
               </picture>
             </li>
-            <li class="advantages__item advantage advantage--color-basic advantage--color-additional">
+            <li class="advantages__item advantage advantage--color-basic advantage--color-additional advantage--line">
               <div class="advantage__wrapper advantage__wrapper--alt">
-                <h3 class="advantage__title advantage__title--alternative">Небольшая<br class="advantage__wrap--tablet advantage__wrap--desktop"> площадь</h3>
+                <h3 class="advantage__title advantage__title--alternative">Небольшая<br class="advantage__wrap advantage__wrap--tablet advantage__wrap--desktop"> площадь</h3>
                 <p class="advantage__number">— №3 —</p>
-                <p class="advantage__description">Все интересные места<br class="advantage__wrap--tablet"> находятся<br class="advantage__wrap"> очень<br class="advantage__wrap--desktop"> близко</p>
+                <p class="advantage__description advantage__description--alt">Все интересные места<br class="advantage__wrap advantage__wrap--tablet"> находятся<br class="advantage__wrap advantage__wrap--mobile"> очень<br class="advantage__wrap advantage__wrap--desktop"> близко</p>
               </div>
             </li>
-            <li class="advantages__item advantage advantage--color-basic advantage--color-additional">
+            <li class="advantages__item advantage advantage--color-basic advantage--color-additional advantage--line">
               <div class="advantage__wrapper advantage__wrapper--alt">
-                <h3 class="advantage__title advantage__title--alternative">Красивая<br class="advantage__wrap--tablet advantage__wrap--desktop"> дорога</h3>
+                <h3 class="advantage__title advantage__title--alternative">Красивая<br class="advantage__wrap advantage__wrap--tablet advantage__wrap--desktop"> дорога</h3>
                 <p class="advantage__number">— №4 —</p>
-                <p class="advantage__description">Ехать в Седону из<br class="advantage__wrap--tablet"> Лас-Вегаса<br class="advantage__wrap"> совсем<br class="advantage__wrap--tablet advantage__wrap--desktop"> не скучно!</p>
+                <p class="advantage__description">Ехать в Седону из<br class="advantage__wrap advantage__wrap--tablet"> Лас-Вегаса<br class="advantage__wrap advantage__wrap--mobile"> совсем<br class="advantage__wrap advantage__wrap--tablet advantage__wrap--desktop"> не скучно!</p>
               </div>
             </li>
             <li class="advantages__item advantage advantage--color-basic advantage--color-additional">
               <div class="advantage__wrapper advantage__wrapper--alt">
-                <h3 class="advantage__title advantage__title--alternative">Мало<br class="advantage__wrap--tablet advantage__wrap--desktop"> туристов</h3>
+                <h3 class="advantage__title advantage__title--alternative">Мало<br class="advantage__wrap advantage__wrap--tablet advantage__wrap--desktop"> туристов</h3>
                 <p class="advantage__number">— №5 —</p>
-                <p class="advantage__description">Большинство едет в<br class="advantage__wrap--tablet"> Гранд Каньон<br class="advantage__wrap"> и<br class="advantage__wrap--tablet advantage__wrap--desktop"> толпится там</p>
+                <p class="advantage__description">Большинство едет в<br class="advantage__wrap advantage__wrap--tablet"> Гранд Каньон<br class="advantage__wrap advantage__wrap--mobile"> и<br class="advantage__wrap advantage__wrap--tablet advantage__wrap--desktop"> толпится там</p>
               </div>
             </li>
           </ul>
@@ -134,13 +134,13 @@
         <section class="main-index__search-hotel search-hotel">
           <h2 class="visually-hidden">Поиск гостиницы.</h2>
           <p class="search-hotel__question">Заинтересовались?</p>
-          <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br class="search-hotel__wrap--tablet search-hotel__wrap--desktop"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br class="search-hotel__wrap search-hotel__wrap--tablet search-hotel__wrap--desktop"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-hotel__link" href="#">Найти Гостиницу</a>
         </section>
         <section class="main-index__map map">
           <h2 class="visually-hidden">Расположение Седоны на карте.</h2>
           <div class="map__wrapper">
-            <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A21d1a39f020344da835848e5d0196412d7e616466d2704d614c3e480b4437dca&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A21d1a39f020344da835848e5d0196412d7e616466d2704d614c3e480b4437dca&amp;source=constructor"></iframe>
           </div>
         </section>
       </main>
@@ -183,7 +183,7 @@
           </section>
           <section class="main-footer__website-developer website-developer">
             <h3 class="visually-hidden">Контакт разработчика сайта.</h3>
-            <a class="website-developer__link" href="https://htmlacademy.ru/">
+            <a class="website-developer__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">Ссылка на сайт разработчика HTML academy.</span>
               <p class="website-developer__description">Разработано</p>
               <svg class="website-developer__svg" width="27" aria-hidden="true" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">

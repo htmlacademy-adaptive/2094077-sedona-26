@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.main-header__wrapper--without-js {
+  height: auto;
+}
+
 .main-header__logo-link {
   display: block;
   width: 185px;
@@ -28,9 +32,10 @@
   background-color: variables.$base-color;
   border: 0;
   cursor: pointer;
-  // &--closed {
-  //   display: none;  //при нажатии на меню добавляет класс
-  // }
+}
+
+.main-header__toggle--closed {
+  display: none;  //при нажатии на меню добавляет класс и при использовании без js включен
 }
 
 .main-header__menu {

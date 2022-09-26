@@ -29,7 +29,20 @@
 }
 
 .advantage__wrapper--alt {
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.advantage__wrapper--margin {
+  margin-top: 37px;
+  margin-bottom: 37px;
+}
+
+.advantage--mask {
+  background-image: url("../img/mask.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
 }
 
 .advantage__title {
@@ -54,6 +67,10 @@
   text-transform: uppercase;
 }
 
+.advantage__wrap {
+  display: none;
+}
+
 .advantage__wrap--tablet {
   display: none;
 }
@@ -62,7 +79,7 @@
   display: none;
 }
 
-.advantage__wrap {
+.advantage__wrap--mobile {
   display: block;
 }
 
@@ -83,6 +100,13 @@
   background-color: variables.$base-color;
 }
 
+.advantage--line {
+  background-image: url("../img/layer.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom center;
+}
+
 @media (min-width: variables.$tablet-width) {
   .advantage {
     display: flex;
@@ -96,11 +120,15 @@
     justify-content: space-between;
     width: 194px;
     height: 172px;
-    margin: 40px 31px 44px 31px;
+    margin: 40px 31px 40px 31px;
   }
 
   .advantage__wrapper--alt {
-    margin-top: 30px;
+    margin-top: 43px;
+  }
+
+  .advantage--mask {
+    background-image: none;
   }
 
   .advantage__title {
@@ -109,8 +137,17 @@
     text-transform: uppercase;
   }
 
+  .advantage__description--alt {
+    padding-bottom: 26px;
+  }
+
+  .advantage__picture--position-number {
+    order: -1;
+  }
+
   .advantage__image {
     width: 512px;
+    height: 256px;
   }
 
   .advantage__image--position-number {
@@ -126,12 +163,20 @@
     display: none;
   }
 
+  .advantage__wrap--mobile {
+    display: none;
+  }
+
   .advantage__wrap--desktop {
     display: none;
   }
 
   .advantage__wrap--tablet {
     display: block;
+  }
+
+  .advantage--line {
+    background-image: none;
   }
 }
 
@@ -143,10 +188,22 @@
   }
 
   .advantage__wrapper--alt {
-    margin-top: 34px;
+    margin-top: 43px;
+  }
+
+  .advantage__wrapper--margin {
+    margin-top: 53px;
+  }
+
+  .advantage__description--alt {
+    padding-bottom: 0;
   }
 
   .advantage__wrap {
+    display: none;
+  }
+
+  .advantage__wrap--mobile {
     display: none;
   }
 
@@ -156,6 +213,10 @@
 
   .advantage__wrap--desktop {
     display: block;
+  }
+
+  .advantage__picture--position-number {
+    order: -1;
   }
 
   .advantage__image {

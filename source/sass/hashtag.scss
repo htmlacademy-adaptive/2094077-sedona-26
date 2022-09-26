@@ -7,16 +7,24 @@
   min-height: 98px;
 }
 
+.hashtag--alt {
+  min-height: 88px;
+}
+
 .hashtag__description {
   @include mixins.start();
   @include mixins.font700();
   display: block;
-  margin-top: 29px;
+  margin-top: 39px;
   font-size: 21px;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+.hashtag__description--alt {
+  margin-top: 30px;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -26,12 +34,16 @@
 
   .hashtag__description {
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 60px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .hashtag__description {
-    margin-left: 105px;
+    margin-left: 118px;
+  }
+
+  .hashtag__description--alt {
+    margin-left: 117px;
   }
 }

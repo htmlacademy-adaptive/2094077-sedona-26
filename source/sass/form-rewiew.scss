@@ -18,20 +18,21 @@
   @include mixins.start();
   @include mixins.font700();
   text-align: center;
-  padding-top: 42px;
+  padding-top: 26px;
   padding-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.form-rewiew__title--alt {
+.form-rewiew__title--padding-top {
   padding-top: 33px;
 }
 
 .form-rewiew__list {
   @include mixins.start();
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .form-rewiew__item-description {
@@ -104,6 +105,34 @@
 
 .form-rewiew__item-description--alternative {
   display: block;
+  padding-left: 0;
+}
+
+.form-rewiew__control-mark-radio {
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin-right: 15px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 50%;
+}
+
+.form-rewiew__input--radio:checked + .form-rewiew__control-mark-radio {
+  background-image: url("../img/dot-radio.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-rewiew__input--radio:hover + .form-rewiew__control-mark-radio {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.form-rewiew__input--radio:focus + .form-rewiew__control-mark-radio {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.form-rewiew__input--radio:active + .form-rewiew__control-mark-radio {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .form-rewiew__attractions {
@@ -119,6 +148,34 @@
   height: 46px;
 }
 
+.form-rewiew__control-mark-checkbox {
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 0;
+}
+
+.form-rewiew__input--checkbox:checked + .form-rewiew__control-mark-checkbox {
+  background-image: url("../img/tick-checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-rewiew__input--checkbox:hover + .form-rewiew__control-mark-checkbox {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.form-rewiew__input--checkbox:focus + .form-rewiew__control-mark-checkbox {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.form-rewiew__input--checkbox:disabled + .form-rewiew__control-mark-checkbox {
+  background-color: rgba(213, 213, 213, 1);
+  opacity: 0.3;
+}
+
 .form-rewiew__emotions {
   @include mixins.start();
   border: 0;
@@ -127,17 +184,23 @@
 
 .form-rewiew__input-rewiew {
   @include mixins.start();
+  @include mixins.font400();
+  font-size: 18px;
+  line-height: 26px;
   box-sizing: border-box;
+  border: 0;
   width: 279px;
   height: 150px;
   background-color: rgba(242, 242, 242, 1);
   padding: 16px;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .form-rewiew__button {
   display: block;
   box-sizing: border-box;
+  font-size: 21px;
+  line-height: 26px;
   width: 281px;
   height: 58px;
   padding: 18px 0 14px;
@@ -149,6 +212,14 @@
   margin-left: auto;
   padding-bottom: 23px;
   color: rgba(51, 51, 51, 0.6);
+}
+
+.form-rewiew__wrap {
+  display: none;
+}
+
+.form-rewiew__wrap--mobile {
+  display: block;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -169,13 +240,15 @@
 
   .form-rewiew__contacts {
     border-bottom: none;
-    margin-left: 44px;
+    margin-left: 6px;
   }
 
   .form-rewiew__impression {
     grid-column-start: 1;
     grid-column-end: 3;
     border-bottom: none;
+    margin: 0 auto;
+    width: 580px;
   }
 
   .form-rewiew__impression .form-rewiew__list {
@@ -184,7 +257,7 @@
   }
 
   .form-rewiew__impression .form-rewiew__item {
-    width: 324px;
+    width: 290px;
   }
 
   .form-rewiew__input--radio {
@@ -236,6 +309,34 @@
     margin-left: 0;
     padding-bottom: 14px;
     color: rgba(51, 51, 51, 0.6);
+  }
+
+  .form-rewiew__item-description--alt {
+    margin-left: 37px;
+  }
+
+  .form-rewiew__input--margin {
+    margin-left: 37px;
+  }
+
+  .form-rewiew__title--alt {
+    padding-top: 32px;
+  }
+
+  .form-rewiew__wrap {
+    display: none;
+  }
+
+  .form-rewiew__wrap--mobile {
+    display: none;
+  }
+
+  .form-rewiew__wrap--tablet {
+    display: block;
+  }
+
+  .form-rewiew__title--pad {
+    padding-top: 18px;
   }
 }
 

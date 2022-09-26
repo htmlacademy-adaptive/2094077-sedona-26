@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.photo-article__link {
+  order: -1;
+}
+
 .photo-article__title {
   @include mixins.start();
   @include mixins.font700();
@@ -18,7 +22,7 @@
 }
 
 .photo-article__image {
-  order: -1;
+  display: block;
 }
 
 .photo-article__author {
@@ -43,6 +47,7 @@
 
 .photo-article__svg {
   fill: rgba(0, 0, 0, 1);
+  opacity: 0.3;
 }
 
 .photo-article__like-number {
@@ -141,7 +146,7 @@
 
   .photo-article__button {
     bottom: 29px;
-    right: 48px;
+    right: 51px;
     width: 23px;
     background-color: rgba(0, 0, 0, 0);
   }
@@ -151,8 +156,14 @@
     bottom: 28px;
   }
 
+  .photo__item:nth-child(3) .photo-article__button {
+    right: 46px;
+    bottom: 28px;
+  }
+
   .photo-article__svg {
     fill: variables.$base-color;
+    opacity: 1;
   }
 
   .photo-article__like-number {
