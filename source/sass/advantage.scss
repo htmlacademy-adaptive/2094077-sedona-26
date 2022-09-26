@@ -61,6 +61,10 @@
   text-transform: uppercase;
 }
 
+.advantage__wrap {
+  display: none;
+}
+
 .advantage__wrap--tablet {
   display: none;
 }
@@ -69,7 +73,7 @@
   display: none;
 }
 
-.advantage__wrap {
+.advantage__wrap--mobile {
   display: block;
 }
 
@@ -148,6 +152,10 @@
     display: none;
   }
 
+  .advantage__wrap--mobile {
+    display: none;
+  }
+
   .advantage__wrap--desktop {
     display: none;
   }
@@ -173,6 +181,10 @@
   }
 
   .advantage__wrap {
+    display: none;
+  }
+
+  .advantage__wrap--mobile {
     display: none;
   }
 

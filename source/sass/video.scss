@@ -25,6 +25,10 @@
   margin-bottom: 37px;
 }
 
+.video__wrap {
+  display: none;
+}
+
 .video__wrap--tablet {
   display: none;
 }
@@ -33,7 +37,7 @@
   display: none;
 }
 
-.video__wrap {
+.video__wrap--mobile {
   display: block;
 }
 
@@ -64,11 +68,15 @@
     margin-bottom: 66px;
   }
 
+  .video__wrap {
+    display: none;
+  }
+
   .video__wrap--desktop {
     display: none;
   }
 
-  .video__wrap {
+  .video__wrap--mobile {
     display: none;
   }
 
@@ -97,6 +105,22 @@
 
   .video__description {
     margin-bottom: 84px;
+  }
+
+  .video__wrap {
+    display: none;
+  }
+
+  .video__wrap--mobile {
+    display: none;
+  }
+
+  .video__wrap--tablet {
+    display: none;
+  }
+
+  .video__wrap--desktop {
+    display: none;
   }
 
   .video__image-container {

@@ -49,12 +49,20 @@
   padding-top: 16px;
 }
 
+.town-wrap {
+  display: none;
+}
+
 .town__wrap--tablet {
   display: none;
 }
 
 .town__wrap--desktop {
   display: none;
+}
+
+.town-wrap--mobile {
+  display: block;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -103,12 +111,20 @@
     padding-top: 0;
   }
 
-  .town__wrap--tablet {
-    display: block;
+  .town-wrap {
+    display: none;
+  }
+
+  .town-wrap--mobile {
+    display: none;
   }
 
   .town__wrap--desktop {
     display: none;
+  }
+
+  .town__wrap--tablet {
+    display: block;
   }
 }
 
@@ -149,6 +165,14 @@
 
   .town__description {
     padding-left: 0;
+  }
+
+  .town-wrap {
+    display: none;
+  }
+
+  .town-wrap--mobile {
+    display: none;
   }
 
   .town__wrap--tablet {

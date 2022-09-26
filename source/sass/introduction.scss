@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+.introduction__wrap {
+  display: none;
+}
+
 .introduction__wrap--tablet {
   display: none;
 }
@@ -36,7 +40,7 @@
   display: none;
 }
 
-.introduction__wrap {
+.introduction__wrap--mobile {
   display: block;
 }
 
@@ -69,6 +73,14 @@
     display: none;
   }
 
+  .introduction__wrap--mobile {
+    display: none;
+  }
+
+  .introduction__wrap--desktop {
+    display: none;
+  }
+
   .introduction__wrap--tablet {
     display: block;
   }
@@ -81,5 +93,22 @@
 
   .introduction__description {
     margin-bottom: 86px;
+  }
+
+  .introduction__wrap {
+    display: none;
+  }
+
+  .introduction__wrap--mobile {
+    display: none;
+  }
+
+
+  .introduction__wrap--tablet {
+    display: none;
+  }
+
+  .introduction__wrap--desktop {
+    display: block;
   }
 }
