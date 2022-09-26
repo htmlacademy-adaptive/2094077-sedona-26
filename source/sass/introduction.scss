@@ -46,8 +46,9 @@
 
 @media (min-width: variables.$tablet-width) {
   .introduction__title {
-    font-size: 26px;
+    font-size: 21px;
     margin-top: 47px;
+    margin-bottom: 32px;
   }
 
   .introduction__title--alt {
@@ -88,11 +89,11 @@
 
 @media (min-width: variables.$desktop-width) {
   .introduction__title {
-    margin-top: 98px;
+    margin-top: 58px;
   }
 
   .introduction__description {
-    margin-bottom: 86px;
+    margin-bottom: 45px;
   }
 
   .introduction__wrap {
