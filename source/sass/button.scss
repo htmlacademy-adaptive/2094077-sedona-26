@@ -5,6 +5,7 @@
 
 .button {
   @include mixins.start();
+  @include mixins.font700();
   display: block;
   text-align: center;
   outline: none;

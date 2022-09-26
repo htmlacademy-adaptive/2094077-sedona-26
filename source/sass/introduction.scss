@@ -15,10 +15,16 @@
   text-align: center;
 }
 
+.introduction__title--alt {
+  margin-top: 36px;
+  margin-bottom: 28px;
+}
+
 .introduction__title--alternative {
   margin-top: 38px;
   margin-bottom: 21px;
 }
+
 
 .introduction__description {
   @include mixins.start();
@@ -26,6 +32,10 @@
   padding: 0 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.introduction__description--alternative {
+  margin-bottom: 28px;
 }
 
 .introduction__wrap {
@@ -59,7 +69,8 @@
   .introduction__title--alternative {
     margin-top: 65px;
     font-size: 30px;
-    line-height: 26px;
+    line-height: 28px;
+    margin-bottom: 21px;
   }
 
   .introduction__description {
@@ -67,7 +78,7 @@
   }
 
   .introduction__description--alt {
-    margin-bottom: 79px;
+    margin-bottom: 82px;
   }
 
   .introduction__wrap {
@@ -92,8 +103,16 @@
     margin-top: 58px;
   }
 
+  .introduction__title--alt {
+    margin-top: 97px;
+  }
+
   .introduction__description {
     margin-bottom: 45px;
+  }
+
+  .introduction__description--alt {
+    margin-bottom: 90px;
   }
 
   .introduction__wrap {

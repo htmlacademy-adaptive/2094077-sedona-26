@@ -146,13 +146,18 @@
 
   .photo-article__button {
     bottom: 29px;
-    right: 48px;
+    right: 51px;
     width: 23px;
     background-color: rgba(0, 0, 0, 0);
   }
 
   .photo__item:nth-child(1) .photo-article__button {
     right: 61px;
+    bottom: 28px;
+  }
+
+  .photo__item:nth-child(3) .photo-article__button {
+    right: 46px;
     bottom: 28px;
   }
 

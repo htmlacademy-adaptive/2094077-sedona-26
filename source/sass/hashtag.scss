@@ -7,6 +7,10 @@
   min-height: 98px;
 }
 
+.hashtag--alt {
+  min-height: 88px;
+}
+
 .hashtag__description {
   @include mixins.start();
   @include mixins.font700();
@@ -17,6 +21,10 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+.hashtag__description--alt {
+  margin-top: 30px;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -33,5 +41,9 @@
 @media (min-width: variables.$desktop-width) {
   .hashtag__description {
     margin-left: 118px;
+  }
+
+  .hashtag__description--alt {
+    margin-left: 117px;
   }
 }
