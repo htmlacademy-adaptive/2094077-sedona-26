@@ -32,6 +32,13 @@
   margin-top: 10px;
 }
 
+.advantage--mask {
+  background-image: url("../img/mask.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
+}
+
 .advantage__title {
   @include mixins.start();
   @include mixins.font700();
@@ -101,6 +108,10 @@
 
   .advantage__wrapper--alt {
     margin-top: 30px;
+  }
+
+  .advantage--mask {
+    background-image: none;
   }
 
   .advantage__title {
