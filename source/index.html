@@ -9,8 +9,8 @@
   <body class="page__body">
 <!-- Шапка/навигация -->
     <div class="page__body-wrapper">
-      <header class="main-header">
-        <div class="main-header__wrapper">
+      <header class="main-header"> <!--Для выключения меня убрать классы main-header__wrapper--without-js, main-navigation--without-js, main-header__toggle--closed-->
+        <div class="main-header__wrapper main-header__wrapper--without-js">
           <a class="main-header__logo-link" href="./index.html">
             <img class="main-header__logo-img" src="./img/sedona-logo-nav.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
@@ -20,7 +20,7 @@
               <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
             </svg>
           </button>
-          <nav class="main-header__main-navigation main-header__main-navigation--closed main-navigation">
+          <nav class="main-header__main-navigation main-header__main-navigation--closed main-navigation main-navigation--without-js">
             <button class="main-navigation__button-close main-navigation__button-close--closed" type="button">
               <span class="visually-hidden">Закрыть меню.</span>
               <svg class="main-navigation__close-menu" aria-hidden="true" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

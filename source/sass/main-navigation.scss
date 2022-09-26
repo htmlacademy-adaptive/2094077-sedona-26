@@ -13,6 +13,11 @@
   text-transform: uppercase;
 }
 
+.main-navigation--without-js {
+  display: block;
+  position: relative;
+}
+
 .main-navigation__button-close {
   @include mixins.start();
   position: absolute;
