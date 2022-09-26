@@ -90,6 +90,13 @@
   background-color: variables.$base-color;
 }
 
+.advantage--line {
+  background-image: url("../img/layer.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom center;
+}
+
 @media (min-width: variables.$tablet-width) {
   .advantage {
     display: flex;
@@ -147,6 +154,10 @@
 
   .advantage__wrap--tablet {
     display: block;
+  }
+
+  .advantage--line {
+    background-image: none;
   }
 }
 
