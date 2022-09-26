@@ -109,6 +109,10 @@
     text-transform: uppercase;
   }
 
+  .advantage__picture--position-number {
+    order: -1;
+  }
+
   .advantage__image {
     width: 512px;
   }
@@ -156,6 +160,10 @@
 
   .advantage__wrap--desktop {
     display: block;
+  }
+
+  .advantage__picture--position-number {
+    order: -1;
   }
 
   .advantage__image {
