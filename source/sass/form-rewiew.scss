@@ -106,6 +106,33 @@
   display: block;
 }
 
+.form-rewiew__control-mark-radio {
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 50%;
+}
+
+.form-rewiew__input--radio:checked + .form-rewiew__control-mark-radio {
+  background-image: url("../img/dot-radio.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-rewiew__input--radio:hover + .form-rewiew__control-mark-radio {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.form-rewiew__input--radio:focus + .form-rewiew__control-mark-radio {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.form-rewiew__input--radio:active + .form-rewiew__control-mark-radio {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .form-rewiew__attractions {
   @include mixins.start();
   border: 0;
@@ -117,6 +144,34 @@
   @include mixins.start();
   width: 46px;
   height: 46px;
+}
+
+.form-rewiew__control-mark-checkbox {
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin-right: 20px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 0;
+}
+
+.form-rewiew__input--checkbox:checked + .form-rewiew__control-mark-checkbox {
+  background-image: url("../img/tick-checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-rewiew__input--checkbox:hover + .form-rewiew__control-mark-checkbox {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.form-rewiew__input--checkbox:focus + .form-rewiew__control-mark-checkbox {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.form-rewiew__input--checkbox:disabled + .form-rewiew__control-mark-checkbox {
+  background-color: rgba(213, 213, 213, 1);
+  opacity: 0.3;
 }
 
 .form-rewiew__emotions {
